@@ -1,2 +1,9 @@
 Halloooo
 Test Test Test
+
+Anleitung:
+0. php neu runterladen und ganz unten GIT auswählen, dann anmelden und dann
+1. neue Datei erstellen
+2. Rechtsklick auf datei - dann commitfile - commitmessage eingeben
+bei Aftercommit daten eingeben
+3. VCS -> GIT -> PUSH --> PUSH
