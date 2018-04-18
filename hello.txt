@@ -7,3 +7,5 @@ Anleitung:
 2. Rechtsklick auf datei - dann commitfile - commitmessage eingeben
 bei Aftercommit daten eingeben
 3. VCS -> GIT -> PUSH --> PUSH
+
+Halloooooo der Tommy ist auch da :D
