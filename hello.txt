@@ -9,3 +9,6 @@ bei Aftercommit daten eingeben
 3. VCS -> GIT -> PUSH --> PUSH
 
 Halloooooo der Tommy ist auch da :D
+
+Haha super funktioniert also :b
+
