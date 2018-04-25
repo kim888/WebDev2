@@ -5,14 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEITQEY_V1.0</title>
-    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="/public/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="/public/css/Features-Boxed.css">
-    <link rel="stylesheet" href="/public/css/Footer-Basic.css">
-    <link rel="stylesheet" href="/public/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="{{ asset('css/styles.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/Navigation-with-Search.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/Footer-Basic.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/Features-Boxed.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('fonts/font-awesome.min.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
+
+
 </head>
+
+<body>
 
 <body>
 <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
@@ -29,7 +33,7 @@
             </form><a class="btn btn-light action-button" role="button" href="#" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="#">Login</a></div>
     </div>
 </nav>
-<div data-bs-parallax-bg="true" style="height:500px;background-image:url(&quot;assets/img/duotone.png&quot;);background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+<div data-bs-parallax-bg="true" style="height:500px;background-image:url({{ asset('img/duotone.png') }});background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
 <div class="features-boxed">
     <div class="container">
         <div class="row justify-content-center features">
@@ -79,9 +83,10 @@
         <p class="copyright">NEITQEY © 2018</p>
     </footer>
 </div>
-<script src="/public/js/jquery.min.js"></script>
-<script src="/public/bootstrap/js/bootstrap.min.js"></script>
-<script src="/public/js/bs-animation.js"></script>
+
+<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bs-animation.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
 
 </html>
