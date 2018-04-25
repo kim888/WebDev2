@@ -4,23 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEITQEY_V0.2</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>NEITQEY_V1.0</title>
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/public/css/Features-Boxed.css">
+    <link rel="stylesheet" href="/public/css/Footer-Basic.css">
+    <link rel="stylesheet" href="/public/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
 </head>
 
 <body>
 <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
-    <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+    <div class="container"><a class="navbar-brand" href="test.blade.php" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                                                                                                                                                                                                                                            data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Featured</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#">Genre</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#">Location</a></li>
             </ul>
@@ -79,9 +79,9 @@
         <p class="copyright">NEITQEY © 2018</p>
     </footer>
 </div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/bs-animation.js"></script>
+<script src="/public/js/jquery.min.js"></script>
+<script src="/public/bootstrap/js/bootstrap.min.js"></script>
+<script src="/public/js/bs-animation.js"></script>
 </body>
 
 </html>
