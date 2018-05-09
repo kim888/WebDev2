@@ -39,7 +39,7 @@
         <div class="row justify-content-center features">
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-map-marker icon"></i>
-                    <h3 class="name">Works everywhere</h3>
+                    <h3 class="name">{{$users}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4 item">
