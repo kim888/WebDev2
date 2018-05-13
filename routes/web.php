@@ -11,8 +11,35 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'FillHomePage@returnFilledPage');
+Route::get('/test.html', 'FillHomePage@returnFilledPage');
+Route::get('/index.html', 'FillHomePage@returnFilledPage');
+
+/* warum geht das so nicht?
+Route::get('/{url}', function ($url) {
+
+    return Redirect::to('/', 'FillHomePage@returnFilledPage');
+
+})->where(['url' => '/index.html|/']);
+*/
+
+
+Route::get('/welcome.html', function () {
     return view('welcome');
 });
+Route::get('/featured.html', 'FillFeaturedPage@returnFilledPage');
+Route::get('/genre.html', function () {
+    return view('genre');
+});
+Route::get('/login.html', function () {
+    return view('login');
+});
+Route::get('/signup.html', function () {
+    return view('signup');
+});
+Route::get('/cart.html', function () {
+    return view('cart');
+});
+Auth::routes();
 
-Route::get('test', 'FillHomePage@returnFilledPage');
+Route::get('/home', 'HomeController@index')->name('home');

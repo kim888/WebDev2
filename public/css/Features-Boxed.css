@@ -68,3 +68,46 @@
   margin-bottom:20px;
 }
 
+.404 {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+p {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:14em;
+  color:white;
+  margin-top:60px;
+  text-align:center;
+}
+
+.normal {
+  width:73%;
+  font-size:3em;
+  margin-top:-60px;
+}
+
+.Text {
+  width:73%;
+  font-size:2em;
+  margin-top:-80px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  border-style:none;
+}
+
+.btn:not(:disabled):not(.disabled) {
+}
+
+.form-control {
+  border:1px solid #348899;
+}
+
+#search-field {
+  border-bottom:1px solid #348899;
+}
+

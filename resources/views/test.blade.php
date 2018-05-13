@@ -20,13 +20,13 @@
 
 <body>
 <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
-    <div class="container"><a class="navbar-brand" href="test.blade.php" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+    <div class="container"><a class="navbar-brand" href="test.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                                                                                                                                                                                                                                            data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Featured</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Genre</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Location</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
             </ul>
             <form class="form-inline mr-auto" target="_self">
                 <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
@@ -37,36 +37,46 @@
 <div class="features-boxed">
     <div class="container">
         <div class="row justify-content-center features">
+
+            <?php for($i = 0; $i < count($users); $i++) : ?>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-map-marker icon"></i>
+                        <h3 class="name"><?= $users[$i]?></h3>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+            <?php endfor ?>
+
+{{--
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-map-marker icon"></i>
-                    <h3 class="name">{{$users}}</h3>
+                    <h3 class="name">{{$user1}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-clock-o icon"></i>
-                    <h3 class="name">Always available</h3>
+                    <h3 class="name">{{$user2}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-list-alt icon"></i>
-                    <h3 class="name">Customizable </h3>
+                    <h3 class="name">{{$user3}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-leaf icon"></i>
-                    <h3 class="name">Organic </h3>
+                    <h3 class="name">{{$user4}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-plane icon"></i>
-                    <h3 class="name">Fast </h3>
+                    <h3 class="name">{{$user5}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="box"><i class="fa fa-phone icon"></i>
-                    <h3 class="name">Mobile-first</h3>
+                    <h3 class="name">{{$user6}}</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>
+            </div>--}}
         </div>
     </div>
 </div>
