@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('bootstrap/css/mdb.css')}}">
+
 </head>
 
 <body>
+
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
         <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -35,20 +38,60 @@
                     class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
     </nav>
+
+
+    <!--korrekter ursprünglicher Code ohne Hover:
+
     <div class="features-boxed">
         <div class="container">
             <div class="row justify-content-center features">
                 {{--Einzelnes Element wird automatisch gefüllt und je nach anzahl der übergebenen Daten im Array vervielfacht--}}
-                <?php for($i = 0; $i < count($users); $i++) : ?>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name"><?= $users[$i]?></h3>
+    <?php for($i = 0; $i < count($users); $i++) : ?>
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                <div class="box"><i class="fa fa-map-marker icon"></i>
+                    <h3 class="name"><?= $users[$i]?></h3>
                         <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
                 </div>
                 <?php endfor ?>
             </div>
         </div>
     </div>
+
+
+    Beispiel für Hover:
+
+    <div class="view overlay">
+        <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(7).jpg" class="img-fluid " alt="">
+        <div class="mask flex-center rgba-red-strong">
+            <p class="white-text">Strong overlay</p>
+        </div>
+    </div>
+
+
+    code mit hover in Box aber noch nicht in vollkommener boxbreite
+-->
+
+    <div class="features-boxed">
+        <div class="container">
+            <div class="row justify-content-center features">
+                {{--Einzelnes Element wird automatisch gefüllt und je nach anzahl der übergebenen Daten im Array vervielfacht--}}
+                <?php for($i = 0; $i < count($users); $i++) : ?>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box">
+                            <div class="view overlay">
+                            <i class="fa fa-map-marker icon">
+                                <h3 class="name"><?= $users[$i]?></h3>
+                            </i>
+                            <div class="mask flex-center rgba-red-strong">
+                                <p class="description text-white">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                                <a href="#" class="learn-more">Learn more »</a></div>
+                        </div></div></div>
+                <?php endfor ?>
+            </div>
+        </div>
+    </div>
+
+
     <div class="footer-basic">
         <footer>
             <div class="social"><a href="http://www.instagram.com"><i class="icon ion-social-instagram"></i></a><a href="http://www.snapchat.de"><i class="icon ion-social-snapchat"></i></a><a href="http://www.twitter.de"><i class="icon ion-social-twitter"></i></a><a href="http://www.facebook.de"><i class="icon ion-social-facebook"></i></a></div>
