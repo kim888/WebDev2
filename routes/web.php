@@ -32,10 +32,10 @@ Route::get('/genre.html', function () {
     return view('genre');
 });
 Route::get('/login.html', function () {
-    return view('login');
+    return view('auth/login');
 });
 Route::get('/signup.html', function () {
-    return view('register');
+    return view('auth/register');
 });
 Route::get('/cart.html', function () {
     return view('cart');
