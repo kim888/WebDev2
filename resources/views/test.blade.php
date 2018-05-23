@@ -12,6 +12,11 @@
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('fonts/font-awesome.min.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('bootstrap/css/mdb.css') }}" media="all" rel="stylesheet" type="text/css" />
+
+    <!--Link für angularjs
+    <script src="/node_modules/angular/angular.js"></script>
+    -->
 
 
 </head>
@@ -21,7 +26,7 @@
 <body>
 <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
     <div class="container"><a class="navbar-brand" href="test.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
-                                                                                                                                                                                                                                           data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                                                                                                                                                                                                                     data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav">
                 <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
@@ -33,53 +38,80 @@
             </form><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="login.html">Login</a></div>
     </div>
 </nav>
+
+
 <div data-bs-parallax-bg="true" style="height:500px;background-image:url({{ asset('img/duotone.png') }});background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
-<div class="features-boxed">
-    <div class="container">
-        <div class="row justify-content-center features">
 
-            <?php for($i = 0; $i < count($users); $i++) : ?>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name"><?= $users[$i]?></h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
+
+
+
+<!--
+
+    Code vor Hover Effekt:
+
+    <?php for($i = 0; $i < count($users); $i++) : ?>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+            <div class="box"><i class="fa fa-map-marker icon"></i>
+                <h3 class="name"><?= $users[$i]?></h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+            </div>
             <?php endfor ?>
+        -->
 
-{{--
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-map-marker icon"></i>
-                    <h3 class="name">{{$user1}}</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-clock-o icon"></i>
-                    <h3 class="name">{{$user2}}</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-list-alt icon"></i>
-                    <h3 class="name">{{$user3}}</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-leaf icon"></i>
-                    <h3 class="name">{{$user4}}</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-plane icon"></i>
-                    <h3 class="name">{{$user5}}</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-phone icon"></i>
-                    <h3 class="name">{{$user6}}</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-            </div>--}}
+<div class="features-boxed">
+<div class="container">
+    <div class="row justify-content-center features">
+
+        <?php for($i = 0; $i < count($users); $i++) : ?>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+            <div class="box">
+                <div class="view overlay">
+                    <i class="fa fa-map-marker icon">
+                        <h3 class="name"><?= $users[$i]?></h3>
+                    </i>
+                    <div class="mask flex-center rgba-red-strong">
+                        <p class="description text-white">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <a href="#" class="learn-more">Learn more »</a></div>
+                </div></div></div>
+        <?php endfor ?>
+
+            {{--
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-map-marker icon"></i>
+                                <h3 class="name">{{$user1}}</h3>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-clock-o icon"></i>
+                                <h3 class="name">{{$user2}}</h3>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-list-alt icon"></i>
+                                <h3 class="name">{{$user3}}</h3>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-leaf icon"></i>
+                                <h3 class="name">{{$user4}}</h3>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-plane icon"></i>
+                                <h3 class="name">{{$user5}}</h3>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-phone icon"></i>
+                                <h3 class="name">{{$user6}}</h3>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                        </div>--}}
         </div>
     </div>
 </div>
+
+
+
 <div class="footer-basic">
     <footer>
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
@@ -100,3 +132,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
