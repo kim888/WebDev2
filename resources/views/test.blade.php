@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <!--Karten zu Location Berlin, Hof, Erfurt, Bayreuth
+    <!--Karten zu Location Berlin, Hof, Erfurt, Bayreuth, München
 
 
     <iframe src="https://www.google.com/maps/d/embed?mid=1lH_CbnK2_TTEVWtVwVC-9F4GISje9R9P" width="640" height="480"></iframe>
@@ -117,9 +117,11 @@
     <iframe src="https://www.google.com/maps/d/embed?mid=1hZ3zQ4yZ8VrDYzRIPpvQny407458xesh" width="640" height="480"></iframe>
 
     <iframe src="https://www.google.com/maps/d/embed?mid=1X4yocFN7xDB1Vf9Dc_jhZShDzN8vviZr" width="640" height="480"></iframe>
-   
+
     <iframe src="https://www.google.com/maps/d/embed?mid=1jMCoF_rlpKWQkf6zsK8xFxjT_3U_nuWl" width="640" height="480"></iframe>
-    -->
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1IMAK67IDB5jvrsc1X8Uc5Bp1BbV_6tGW" width="640" height="480"></iframe>
+-->
 
 </div>
 
@@ -127,7 +129,7 @@
 
 <div class="footer-basic">
     <footer>
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a><a href="https://facebook.com"><i class="icon ion-social-facebook"></i></a></div>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Home</a></li>
             <li class="list-inline-item"><a href="#">Services</a></li>

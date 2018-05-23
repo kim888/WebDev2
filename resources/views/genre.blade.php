@@ -37,7 +37,7 @@
     </nav>
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="http://www.snapchat.com"><i class="icon ion-social-instagram"></i></a><a href="http://www.instagram.de"><i class="icon ion-social-snapchat"></i></a><a href="http://www.twitter.de"><i class="icon ion-social-twitter"></i></a><a href="http://www.facebook.de"><i class="icon ion-social-facebook"></i></a></div>
+            <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a><a href="https://facebook.com"><i class="icon ion-social-facebook"></i></a></div>
             <ul
                 class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
