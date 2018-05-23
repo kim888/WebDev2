@@ -83,7 +83,7 @@
                                 <h3 class="name"><?= $users[$i]?></h3>
                             </i>
                             <div class="mask flex-center rgba-red-strong">
-                                <p class="description text-white">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                                <p class="description text-white"><?= $users[$i]?></p>
                                 <a href="#" class="learn-more">Learn more »</a></div>
                         </div></div></div>
                 <?php endfor ?>
