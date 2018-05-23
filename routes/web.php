@@ -35,7 +35,7 @@ Route::get('/login.html', function () {
     return view('login');
 });
 Route::get('/signup.html', function () {
-    return view('signup');
+    return view('register');
 });
 Route::get('/cart.html', function () {
     return view('cart');

@@ -30,7 +30,7 @@
             </ul>
             <form class="form-inline mr-auto" target="_self">
                 <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
-            </form><a class="btn btn-light action-button" role="button" href="#" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="#">Login</a></div>
+            </form><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="login.html">Login</a></div>
     </div>
 </nav>
 <div data-bs-parallax-bg="true" style="height:500px;background-image:url({{ asset('img/duotone.png') }});background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
