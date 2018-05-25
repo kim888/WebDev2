@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <!--Karten zu Location Berlin, Hof, Erfurt, Bayreuth, München
+<!--Karten zu Location Berlin, Hof, Erfurt, Bayreuth, München
 
 
     <iframe src="https://www.google.com/maps/d/embed?mid=1lH_CbnK2_TTEVWtVwVC-9F4GISje9R9P" width="640" height="480"></iframe>
@@ -122,6 +122,7 @@
 
     <iframe src="https://www.google.com/maps/d/embed?mid=1IMAK67IDB5jvrsc1X8Uc5Bp1BbV_6tGW" width="640" height="480"></iframe>
 -->
+
 
 </div>
 
