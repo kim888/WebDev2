@@ -30,7 +30,7 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="genre.html">Genre</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Location</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
