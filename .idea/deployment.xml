@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="PublishConfigData" serverName="Git" uploadOnCheckin="619ee888-8a8f-4724-9e43-a4ecf4096d1d">
-    <serverData>
-      <paths name="Git">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
     <option name="myUploadOnCheckinName" value="Git" />
   </component>
 </project>

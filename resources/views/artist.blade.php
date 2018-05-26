@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured</title>
+    <title>Artist</title>
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
@@ -23,12 +23,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
         <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="featured.html">Featured</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
                 </ul>
@@ -39,55 +39,34 @@
                     class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
     </nav>
-    <p class="lead text-center text-white" style="font-size:2em;">FEATURED</p>
-    <div class="features-boxed">
-        <div class="container">
-            <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name">Works everywhere</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-clock-o icon"></i>
-                        <h3 class="name">Always available</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-list-alt icon"></i>
-                        <h3 class="name">Customizable </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-leaf icon"></i>
-                        <h3 class="name">Organic </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-leaf icon"></i>
-                        <h3 class="name">Organic </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-plane icon"></i>
-                        <h3 class="name">Fast </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-phone icon"></i>
-                        <h3 class="name">Mobile-first</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-plane icon"></i>
-                        <h3 class="name">Fast </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-phone icon"></i>
-                        <h3 class="name">Mobile-first</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
+    <div class="row">
+        <div class="col" style="background-color:#ffffff;max-height:none;min-height:1;height:208px;"><img src="assets/img/justin_timberlake_2.jpg" style="width:282px;max-width:282px;">
+            <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto;">Justin Timberlake</p>
+        </div>
+    </div>
+    <div role="tablist" id="accordion-1" style="margin-top:20px;">
+        <div class="card" style="border-radius:0px;">
+            <div class="card-header" role="tab">
+                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1" data-bs-hover-animate="flash" style="color:rgb(0,0,0);">Berlin Sa. 21.07.18</a></h5>
+            </div>
+            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1" style="height:700px;">
+                <div class="card-body"></div>
+            </div>
+        </div>
+        <div class="card" style="margin:0px;margin-top:20px;border-radius:0px;">
+            <div class="card-header" role="tab" style="margin-top:0px;">
+                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2" data-bs-hover-animate="flash" style="color:rgb(0,0,0);">Stuttgart Sa. 28.07.18&nbsp;</a></h5>
+            </div>
+            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1" style="height:700px;">
+                <div class="card-body"></div>
+            </div>
+        </div>
+        <div class="card" style="margin-top:20px;border-radius:0px;">
+            <div class="card-header" role="tab">
+                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3" data-bs-hover-animate="flash" style="color:rgb(0,0,0);">Frankfurt Fr. 03.08.18&nbsp;</a></h5>
+            </div>
+            <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-1" style="height:700px;">
+                <div class="card-body"></div>
             </div>
         </div>
     </div>
