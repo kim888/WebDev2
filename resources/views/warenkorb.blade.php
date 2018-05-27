@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
+
+
 </head>
 
 <body>
@@ -25,8 +27,8 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="404.html">Genre</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="404.html">Location</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
@@ -55,6 +57,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
+
 </body>
 
 </html>

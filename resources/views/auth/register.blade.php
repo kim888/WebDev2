@@ -71,7 +71,7 @@
             <div class="form-group">
                 <a type="submit" class="btn btn-primary btn-block" role="button" href="userProfil.html">{{ __('Register') }}</a>
             </div>
-            <a href="logIn.html" class="already">You already have an account? Login here.</a></form>
+            <a href="login.html" class="already">You already have an account? Login here.</a></form>
     </div>
 </div>
 <div class="footer-basic">

@@ -125,7 +125,7 @@
 
 
 
-<!-- Email Formula Internet Recherche
+<!-- Email Formular Internet Recherche
 
 
     <form name="contact_form" method="post"  onSubmit="return evalid()">
@@ -270,6 +270,7 @@
         echo "You must write a message. </br> Please go to <a href='/contact.php'>Contact Page</a>";
     }
     ?>
+
     -->
 
 </div>
