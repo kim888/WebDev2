@@ -28,6 +28,7 @@ Route::get('/welcome.html', function () {
     return view('welcome');
 });
 Route::get('/featured.html', 'FillFeaturedPage@returnFilledPage');
+
 Route::get('/genre.html', function () {
     return view('genre');
 });
@@ -37,9 +38,22 @@ Route::get('/login.html', function () {
 Route::get('/signup.html', function () {
     return view('auth/register');
 });
-Route::get('/cart.html', function () {
-    return view('cart');
+Route::get('/warenkorb.html', function () {
+    return view('warenkorb');
 });
+Route::get('/location.html', function (){
+    return view('location');
+});
+Route::get('/userProfl.html', function (){
+    return view('userProfil');
+});
+Route::get('/profilBearbeiten.html', function (){
+    return view('profilBearbeiten');
+});
+Route::get('/artist.html', function (){
+    return view('artist');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
