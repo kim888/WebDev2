@@ -11,18 +11,20 @@ class FillFeaturedPage extends Controller
     public function returnFilledPage()
     {
 
-        /*$band1 = DB::table('users')->where('id', '1')->value('lastname');
+        /*
+        $band1 = DB::table('users')->where('id', '1')->value('lastname');
         $band2 = DB::table('users')->where('id', '2')->value('lastname');
         $band3 = DB::table('users')->where('id', '3')->value('lastname');
         $band4 = DB::table('users')->where('id', '4')->value('lastname');
         $band5 = DB::table('users')->where('id', '5')->value('lastname');
-        $band6 = DB::table('users')->where('id', '6')->value('lastname');*/
+        $band6 = DB::table('users')->where('id', '6')->value('lastname');
+        */
 
         For($i=1;$i<=9;$i++) {
             ${'band' . $i}=DB::table('artist')->where('id', $i)->value('bandname');
         }
-
-        $data['users'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];
+        //band ist name der var auf featured.blade.php
+        $data['bands'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];
         //return view('test', ['band1' => $band1],['band2'=> $band2],['band3'=> $band3],['band4'=> $band4],['band5'=> $band5],['band6'=> $band6]);
         //return view('test')->with('band1',$band1,'band2',$band2);
         return view('featured', $data);

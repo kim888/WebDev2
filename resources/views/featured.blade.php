@@ -40,23 +40,7 @@
 
     <p class="lead text-center text-white" style="font-size:2em;">FEATURED</p>
 
-    <!--korrekter ursprünglicher Code ohne Hover:
-
-    <div class="features-boxed">
-        <div class="container">
-            <div class="row justify-content-center features">
-                {{--Einzelnes Element wird automatisch gefüllt und je nach anzahl der übergebenen Daten im Array vervielfacht--}}
-    <?php for($i = 0; $i < count($users); $i++) : ?>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="box"><i class="fa fa-map-marker icon"></i>
-                    <h3 class="name"><?= $users[$i]?></h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                </div>
-                <?php endfor ?>
-            </div>
-        </div>
-    </div>
-
+{{--
 
     Beispiel für Hover:
 
@@ -66,24 +50,25 @@
             <p class="white-text">Strong overlay</p>
         </div>
     </div>
+--}}
 
 
-    code mit hover in Box aber noch nicht in vollkommener boxbreite
+    {{--code mit hover in Box aber noch nicht in vollkommener boxbreite--}}
 -->
 
     <div class="features-boxed">
         <div class="container">
             <div class="row justify-content-center features">
                 {{--Einzelnes Element wird automatisch gefüllt und je nach anzahl der übergebenen Daten im Array vervielfacht--}}
-                <?php for($i = 0; $i < count($users); $i++) : ?>
+                <?php for($i = 0; $i < count($bands); $i++) : ?>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                         <div class="box">
                             <div class="view overlay">
                             <i class="fa fa-map-marker icon">
-                                <h3 class="name"><?= $users[$i]?></h3>
+                                <h3 class="name"><?= $bands[$i]?></h3>
                             </i>
                             <div class="mask flex-center rgba-red-strong">
-                                <p class="description text-white"><?= $users[$i]?></p>
+                                <p class="description text-white"><?= $bands[$i]?></p>
                                 <a href="#" class="learn-more">Learn more »</a></div>
                         </div></div></div>
                 <?php endfor ?>
