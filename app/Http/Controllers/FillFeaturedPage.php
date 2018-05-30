@@ -11,20 +11,20 @@ class FillFeaturedPage extends Controller
     public function returnFilledPage()
     {
 
-        /*$user1 = DB::table('users')->where('id', '1')->value('lastname');
-        $user2 = DB::table('users')->where('id', '2')->value('lastname');
-        $user3 = DB::table('users')->where('id', '3')->value('lastname');
-        $user4 = DB::table('users')->where('id', '4')->value('lastname');
-        $user5 = DB::table('users')->where('id', '5')->value('lastname');
-        $user6 = DB::table('users')->where('id', '6')->value('lastname');*/
+        /*$band1 = DB::table('users')->where('id', '1')->value('lastname');
+        $band2 = DB::table('users')->where('id', '2')->value('lastname');
+        $band3 = DB::table('users')->where('id', '3')->value('lastname');
+        $band4 = DB::table('users')->where('id', '4')->value('lastname');
+        $band5 = DB::table('users')->where('id', '5')->value('lastname');
+        $band6 = DB::table('users')->where('id', '6')->value('lastname');*/
 
         For($i=1;$i<=9;$i++) {
-            ${'user' . $i}=DB::table('users')->where('id', $i)->value('lastname');
+            ${'band' . $i}=DB::table('artist')->where('id', $i)->value('bandname');
         }
 
-        $data['users'] = [$user1, $user2, $user3, $user4, $user5, $user6, $user7, $user8, $user9];
-        //return view('test', ['user1' => $user1],['user2'=> $user2],['user3'=> $user3],['user4'=> $user4],['user5'=> $user5],['user6'=> $user6]);
-        //return view('test')->with('user1',$user1,'user2',$user2);
+        $data['users'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];
+        //return view('test', ['band1' => $band1],['band2'=> $band2],['band3'=> $band3],['band4'=> $band4],['band5'=> $band5],['band6'=> $band6]);
+        //return view('test')->with('band1',$band1,'band2',$band2);
         return view('featured', $data);
 
         /* For Schleife und Array das übergeben werden sollte
@@ -34,12 +34,12 @@ class FillFeaturedPage extends Controller
 
             error_log("variable x ist: ".$x);
             $data = array(
-                'user1' => 'user1',
-                'user2' => 'user2',
-                'user3' => 'user3',
-                'user4' => 'user4',
-                'user5' => 'user5',
-                'user6' => 'user6'
+                'band1' => 'band1',
+                'band2' => 'band2',
+                'band3' => 'band3',
+                'band4' => 'band4',
+                'band5' => 'band5',
+                'band6' => 'band6'
             );
             //return view('test', ["user".$x => $user]);
         }

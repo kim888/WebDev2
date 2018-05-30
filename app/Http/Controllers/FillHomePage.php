@@ -11,17 +11,17 @@ class FillHomePage extends Controller
     public function returnFilledPage()
     {
 
-        $user1 = DB::table('users')->where('id', '1')->value('lastname');
-        $user2 = DB::table('users')->where('id', '2')->value('lastname');
-        $user3 = DB::table('users')->where('id', '3')->value('lastname');
-        $user4 = DB::table('users')->where('id', '4')->value('lastname');
-        $user5 = DB::table('users')->where('id', '5')->value('lastname');
-        $user6 = DB::table('users')->where('id', '6')->value('lastname');
-        error_log($user1." ".$user2." ".$user3);
-        //return view('test', ['user1' => $user1],['user2'=> $user2],['user3'=> $user3],['user4'=> $user4],['user5'=> $user5],['user6'=> $user6]);
-        //return view('test')->with('user1',$user1,'user2',$user2);
+        $band1 = DB::table('artist')->where('id', '1')->value('bandname');
+        $band2 = DB::table('artist')->where('id', '2')->value('bandname');
+        $band3 = DB::table('artist')->where('id', '3')->value('bandname');
+        $band4 = DB::table('artist')->where('id', '4')->value('bandname');
+        $band5 = DB::table('artist')->where('id', '5')->value('bandname');
+        $band6 = DB::table('artist')->where('id', '6')->value('bandname');
+        error_log($band1." ".$band2." ".$band3);
+        //return view('test', ['band1' => $band1],['band2'=> $band2],['band3'=> $band3],['band4'=> $band4],['band5'=> $band5],['band6'=> $band6]);
+        //return view('test')->with('band1',$band1,'band2',$band2);
 
-        $data['users'] = [$user1, $user2, $user3, $user4, $user5, $user6];
+        $data['users'] = [$band1, $band2, $band3, $band4, $band5, $band6];
 
         return view('test', $data);
 
@@ -32,12 +32,12 @@ class FillHomePage extends Controller
 
             error_log("variable x ist: ".$x);
             $data = array(
-                'user1' => 'user1',
-                'user2' => 'user2',
-                'user3' => 'user3',
-                'user4' => 'user4',
-                'user5' => 'user5',
-                'user6' => 'user6'
+                'band1' => 'band1',
+                'band2' => 'band2',
+                'band3' => 'band3',
+                'band4' => 'band4',
+                'band5' => 'band5',
+                'band6' => 'band6'
             );
             //return view('test', ["user".$x => $user]);
         }
