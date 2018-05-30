@@ -25,14 +25,14 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="404.html">Genre</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="404.html">Location</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div><a class="btn btn-primary" role="button" href="warenkorb.html"
                         style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
                     <a
-                        class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a>
+                        class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
                         <div class="btn-group"><button class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
                                 type="button" style="background-color:#348899;border-radius:40px;"></button>
                             <div class="dropdown-menu" role="menu" style="background-color:#979c9c;border-radius:40px;"><a class="dropdown-item" role="presentation" href="profilBearbeiten.html" data-bs-hover-animate="pulse" style="color:#348899;border-radius:60px;">Profil bearbeiten</a><a class="dropdown-item" role="presentation" href="index.html"
