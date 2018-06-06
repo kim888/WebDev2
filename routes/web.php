@@ -14,6 +14,7 @@
 Route::get('/', 'FillHomePage@returnFilledPage');
 Route::get('/test.html', 'FillHomePage@returnFilledPage');
 Route::get('/index.html', 'FillHomePage@returnFilledPage');
+Route::get('/home', 'FillHomePage@returnFilledPage');
 
 /* warum geht das so nicht?
 Route::get('/{url}', function ($url) {
@@ -44,14 +45,14 @@ Route::get('/warenkorb.html', function () {
 Route::get('/location.html', function (){
     return view('location');
 });
-Route::get('/userProfl.html', function (){
+Route::get('/userProfil.html', function (){
     return view('userProfil');
 });
 Route::get('/profilBearbeiten.html', function (){
     return view('profilBearbeiten');
 });
 Route::get('/artist.html', function (){
-    return view('artist');
+    return view('artists');
 });
 
 Auth::routes();

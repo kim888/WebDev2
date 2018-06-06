@@ -21,7 +21,7 @@ class FillFeaturedPage extends Controller
         */
 
         For($i=1;$i<=9;$i++) {
-            ${'band' . $i}=DB::table('artist')->where('id', $i)->value('bandname');
+            ${'band' . $i}=DB::table('artists')->where('id', $i)->value('bandname');
         }
         //band ist name der var auf featured.blade.php
         $data['bands'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];
