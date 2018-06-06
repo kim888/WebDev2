@@ -11,12 +11,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(users::class);
-        $this->call(event::class);
-        $this->call(artist::class);
+
+        $this->call(users::class);
+        $this->call(artists::class);
         $this->call(konzert::class);
         $this->call(location::class);
         $this->call(rechnung::class);
         $this->call(ticket::class);
+        $this->call(eventsSeeder::class);
     }
 }
