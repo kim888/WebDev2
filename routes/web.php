@@ -52,11 +52,12 @@ Route::get('/profilBearbeiten.html', function (){
     return view('profilBearbeiten');
 });
 Route::get('/artist.html', function (){
-    return view('artists');
+    return view('artist');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 

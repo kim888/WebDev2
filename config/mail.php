@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_GUN', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,7 @@ return [
     |
     */
 
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
-    ],
+    'from' => ['address' => 'kimberly.schlenzig@hof-university.de', 'name' => 'NEITQEY'],
 
     /*
     |--------------------------------------------------------------------------
@@ -119,5 +116,7 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
+
+
 
 ];
