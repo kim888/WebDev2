@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class users extends Seeder
 {
@@ -12,6 +13,7 @@ class users extends Seeder
     public function run()
     {
         DB::table('users')->insert([
+            'name' => 'testeroni',
             'vorname' => 'testeroni',
             'nachname' => 'testboy',
             'geburtsdatum' => '1920-05-03',
@@ -25,6 +27,7 @@ class users extends Seeder
             'password' => 'hallo',
         ]);
         DB::table('users')->insert([
+            'name' => 'Peterzwegat',
             'vorname' => 'Peter',
             'nachname' => 'Kasper',
             'geburtsdatum' => '1945-05-11',
@@ -38,6 +41,7 @@ class users extends Seeder
             'password' => 'ciao115b',
         ]);
         DB::table('users')->insert([
+            'name' => 'Hansi',
             'vorname' => 'Hansi',
             'nachname' => 'Hinterseher',
             'geburtsdatum' => '1988-03-23',
@@ -51,6 +55,7 @@ class users extends Seeder
             'password' => 'hallo7603in',
         ]);
         DB::table('users')->insert([
+            'name' => 'Franz',
             'vorname' => 'Franz',
             'nachname' => 'Kirsche',
             'geburtsdatum' => '1991-12-03',
@@ -64,6 +69,7 @@ class users extends Seeder
             'password' => 'blablubb912',
         ]);
         DB::table('users')->insert([
+            'name' => 'Florian',
             'vorname' => 'Florian',
             'nachname' => 'Kieweg',
             'geburtsdatum' => '1992-08-22',
@@ -77,6 +83,7 @@ class users extends Seeder
             'password' => 'Flori25',
         ]);
         DB::table('users')->insert([
+            'name' => 'Maximilian',
             'vorname' => 'Maximilian',
             'nachname' => 'Hinz',
             'geburtsdatum' => '1985-11-19',
@@ -90,6 +97,7 @@ class users extends Seeder
             'password' => 'bobobo224',
         ]);
         DB::table('users')->insert([
+            'name' => 'Thomas',
             'vorname' => 'Thomas',
             'nachname' => 'Müller',
             'geburtsdatum' => '1987-11-23',
@@ -103,6 +111,7 @@ class users extends Seeder
             'password' => 'thommmi2224',
         ]);
         DB::table('users')->insert([
+            'name' => 'Kim',
             'vorname' => 'Kim',
             'nachname' => 'Schlenzo',
             'geburtsdatum' => '1998-02-03',
@@ -116,6 +125,7 @@ class users extends Seeder
             'password' => 'Schlenzoni96',
         ]);
         DB::table('users')->insert([
+            'name' => 'Fritz',
             'vorname' => 'Fritz',
             'nachname' => 'Bauer',
             'geburtsdatum' => '1993-10-16',
@@ -129,6 +139,7 @@ class users extends Seeder
             'password' => 'ichbinbauer23!',
         ]);
         DB::table('users')->insert([
+            'name' => 'Peter',
             'vorname' => 'Peter',
             'nachname' => 'Hahn',
             'geburtsdatum' => '1973-03-29',

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class artist extends Seeder
+class artists extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,21 +11,21 @@ class artist extends Seeder
      */
     public function run()
     {
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Flogging Molly',
             'genre' => 'Irish',
             'locationId' => '1',
             'tourdatum' => '2018-05-12',
             'picture' => 'database/picture/Flogging_Molly.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Paul Kalkbrenner',
             'genre' => 'Techno',
             'locationId' => '3',
             'tourdatum' => '2019-02-09',
             'picture' => 'database/picture/Paul_Kalkbrenner.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Eminem',
             'genre' => 'Hip Hop',
             'locationId' => '2',
@@ -33,49 +33,49 @@ class artist extends Seeder
             'picture' => 'database/picture/Eminem.jpg'
 
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Nas',
             'genre' => 'Hip Hop',
             'locationId' => '4',
             'tourdatum' => '2019-06-18',
             'picture' => 'database/picture/Nas.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Rihanna',
             'genre' => 'Pop',
             'locationId' => '5',
             'tourdatum' => '2019-02-01',
             'picture' => 'database/picture/Rihanna.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Florian Silbereisen',
             'genre' => 'Volksmusik',
             'locationId' => '3',
             'tourdatum' => '2019-01-14',
             'picture' => 'database/picture/Silbereisen.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'The Offspring',
             'genre' => 'Rock',
             'locationId' => '7',
             'tourdatum' => '2018-12-03',
             'picture' => 'database/picture/Offspring.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Rise Against',
             'genre' => 'Rock',
             'locationId' => '6',
             'tourdatum' => '2018-09-09',
             'picture' => 'database/picture/Rise_Against.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Beatsteaks',
             'genre' => 'Rock',
             'locationId' => '8',
             'tourdatum' => '2019-02-18',
             'picture' => 'database/picture/Beatsteaks.jpg'
         ]);
-        DB::table('artist')->insert([
+        DB::table('artists')->insert([
             'bandname' => 'Bob Marley',
             'genre' => 'Reggae',
             'locationId' => '6',

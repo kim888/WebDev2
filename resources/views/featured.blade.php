@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrap/css/mdb.css')}}">
 
+    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+
 </head>
 
 <body>

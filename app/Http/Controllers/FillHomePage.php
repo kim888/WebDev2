@@ -11,12 +11,12 @@ class FillHomePage extends Controller
     public function returnFilledPage()
     {
 
-        $band1 = DB::table('artist')->where('id', '1')->value('bandname');
-        $band2 = DB::table('artist')->where('id', '2')->value('bandname');
-        $band3 = DB::table('artist')->where('id', '3')->value('bandname');
-        $band4 = DB::table('artist')->where('id', '4')->value('bandname');
-        $band5 = DB::table('artist')->where('id', '5')->value('bandname');
-        $band6 = DB::table('artist')->where('id', '6')->value('bandname');
+        $band1 = DB::table('artists')->where('id', '1')->value('bandname');
+        $band2 = DB::table('artists')->where('id', '2')->value('bandname');
+        $band3 = DB::table('artists')->where('id', '3')->value('bandname');
+        $band4 = DB::table('artists')->where('id', '4')->value('bandname');
+        $band5 = DB::table('artists')->where('id', '5')->value('bandname');
+        $band6 = DB::table('artists')->where('id', '6')->value('bandname');
         error_log($band1." ".$band2." ".$band3);
         //return view('test', ['band1' => $band1],['band2'=> $band2],['band3'=> $band3],['band4'=> $band4],['band5'=> $band5],['band6'=> $band6]);
         //return view('test')->with('band1',$band1,'band2',$band2);

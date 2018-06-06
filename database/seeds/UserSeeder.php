@@ -12,7 +12,7 @@ class UserSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    {/*
         for ($x = 0; $x <= 10; $x++) {
             DB::table('users')->insert([
                 'name' => str_random(5),
@@ -29,5 +29,8 @@ class UserSeeder extends Seeder
                 //'date' => Carbon::parse('2000-01-01')
             ]);
         }
+        $user = new App/User;
+        $user->name = "Mustermann";
+*/
     }
 }

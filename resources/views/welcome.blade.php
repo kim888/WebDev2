@@ -11,6 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+
+        <!-- FavIcon -->
+        <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+
         <style>
             html, body {
                 background-color: #fff;
