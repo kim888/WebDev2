@@ -52,7 +52,7 @@ Route::get('/profilBearbeiten.html', function (){
     return view('profilBearbeiten');
 });
 Route::get('/artist.html', function (){
-    return view('artists');
+    return view('artist');
 });
 
 Auth::routes();
