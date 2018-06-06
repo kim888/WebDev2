@@ -34,10 +34,13 @@
 
     </div>
 </nav>
+
 <div class="register-photo">
     <div class="form-container">
         <div class="image-holder" style="background-image:url({{asset('/img/Saal.jpg')}});"></div>
+
         <form method="POST" action="{{route('register')}}">
+
             <h2 class="text-center"><strong>Create</strong> an account.</h2>
             <div class="form-group ">
                 <input id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" type="text" name="name" placeholder="Username" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('name') }}" required autofocus>
@@ -48,7 +51,7 @@
                 @endif
             </div>
             <div class="form-group">
-                <input id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" type="email" name="email" placeholder="Email" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('email') }}" required>
+                <input id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"  type="email" name="email" placeholder="Email" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('email') }}" required $name=Input::get('email');>
                 @if ($errors->has('email'))
                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -72,8 +75,36 @@
                 <a type="submit" class="btn btn-primary btn-block" role="button" href="userProfil.html">{{ __('Register') }}</a>
             </div>
             <a href="login.html" class="already">You already have an account? Login here.</a></form>
+
+
     </div>
+
+
+    <?php
+        /*
+    $registration_empfeanger = $name;
+    $registration_betreff = "Danke für die Anmeldung";
+    $registration_text =
+    $echo = "Hallo
+    Du hast dich grade erfolgreich bei NEITQEY registriert.
+
+    Wir wünschen dir ganz viel Spaß.
+
+    Mit freundlichen Grüßen, dein  NEITQEY Team ";
+
+    $mailer = new Mailers\UserMailer($registration_empfeanger);
+    $mailer->welcomeMail()->deliver();
+
+    //mail($registration_empfeanger, $registration_betreff, $registration_text, "FROM:kimberly.schlenzig@hof-university.de<support>");
+        */
+
+?>
 </div>
+
+
+
+
+
 <div class="footer-basic">
     <footer>
         <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a><a href="https://facebook.com"><i class="icon ion-social-facebook"></i></a></div>
