@@ -22,12 +22,17 @@ class FillFeaturedPage extends Controller
 
         For($i=1;$i<=9;$i++) {
             ${'band' . $i}=DB::table('artists')->where('id', $i)->value('bandname');
+            ${'img' . $i}=DB::table('artists')->where('id', $i)->value('picture');
         }
+        $band10 = DB::table('artists') -> where('id', 7) -> value('picture');
+        //$imgUrl = DB::table('artists') -> where('id', 1) -> value('picture');
         //band ist name der var auf featured.blade.php
         $data['bands'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];
+        $imgNames['imgNames'] = [$img1, $img2, $img3, $img4, $img5, $img6, $img7, $img8, $img9];
+
         //return view('test', ['band1' => $band1],['band2'=> $band2],['band3'=> $band3],['band4'=> $band4],['band5'=> $band5],['band6'=> $band6]);
         //return view('test')->with('band1',$band1,'band2',$band2);
-        return view('featured', $data);
+        return view('featured', $data, $imgNames);
 
         /* For Schleife und Array das übergeben werden sollte
         for ($x = 1; $x <= 6; $x++) {

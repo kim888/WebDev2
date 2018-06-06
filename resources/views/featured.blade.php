@@ -60,7 +60,7 @@
             <div class="row justify-content-center features">
                 {{--Einzelnes Element wird automatisch gefüllt und je nach anzahl der übergebenen Daten im Array vervielfacht--}}
                 <?php for($i = 0; $i < count($bands); $i++) : ?>
-                <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:98%;background-repeat: no-repeat ;background-image: url({{asset('/img/dbImages/artists/Eminem.jpg')}})">
+                <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' . $imgNames[$i] . '.jpg')}})">
                         <div class="box" style="background: rgba(0,0,0,0)">
                             <div class="view overlay">
                                 <i class="fa fa-map-marker icon">
