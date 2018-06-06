@@ -14,6 +14,9 @@
     <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('bootstrap/css/mdb.css') }}" media="all" rel="stylesheet" type="text/css" />
 
+    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+
+
     <!--Link für angularjs
     <script src="/node_modules/angular/angular.js"></script>
     -->
