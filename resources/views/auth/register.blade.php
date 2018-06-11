@@ -40,7 +40,7 @@
         <div class="image-holder" style="background-image:url({{asset('/img/Saal.jpg')}});"></div>
 
         <form method="POST" action="{{route('register')}}">
-
+            @csrf
             <h2 class="text-center"><strong>Create</strong> an account.</h2>
             <div class="form-group ">
                 <input id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" type="text" name="name" placeholder="Username" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('name') }}" required autofocus>
@@ -72,7 +72,7 @@
                 <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
             </div>
             <div class="form-group">
-                <a type="submit" class="btn btn-primary btn-block" role="button" href="userProfil.html">{{ __('Register') }}</a>
+                <button type="submit" class="btn btn-primary btn-block" role="button">{{ __('Register') }}</button>
             </div>
             <a href="login.html" class="already">You already have an account? Login here.</a></form>
 
