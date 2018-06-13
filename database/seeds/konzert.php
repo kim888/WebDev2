@@ -11,7 +11,7 @@ class konzert extends Seeder
      */
     public function run()
     {
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Tester',
             'beschreibung' => 'testungsbeschreibung weil es spass macht',
             'eventdatum' => '2018-05-12',
@@ -22,7 +22,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Funfest',
             'beschreibung' => 'Funfest ist ein Festival mit vielen supergenialen acts!',
             'eventdatum' => '2018-11-02',
@@ -33,7 +33,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Superkonzi',
             'beschreibung' => 'Erlebt Paul Kalkbrenner live!',
             'eventdatum' => '2019-02-09',
@@ -44,7 +44,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Abendland',
             'beschreibung' => 'Tanz wie damals im Abendland',
             'eventdatum' => '2019-06-18',
@@ -55,7 +55,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Rihannafest',
             'beschreibung' => 'Rihanna und 2 Vorbands',
             'eventdatum' => '2019-02-01',
@@ -66,7 +66,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Silbi on Tour',
             'beschreibung' => 'Volksmusik vom aller feinsten!',
             'eventdatum' => '2019-01-14',
@@ -77,7 +77,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Punk 2 3 4',
             'beschreibung' => 'Offspring und weitere Punkacts',
             'eventdatum' => '2018-12-03',
@@ -88,7 +88,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Rock from USA',
             'beschreibung' => 'Rockt ab mit Rise Against und vielen mehr!',
             'eventdatum' => '2018-09-09',
@@ -99,7 +99,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Beaterlebnis',
             'beschreibung' => 'Erlebe Beatsteaks live!',
             'eventdatum' => '2019-02-18',
@@ -110,7 +110,7 @@ class konzert extends Seeder
 
 
         ]);
-        DB::table('konzert')->insert([
+        DB::table('konzerts')->insert([
             'name' => 'Reggeatime',
             'beschreibung' => 'Lausche den gemütlichen Klängen des Reggea mit der Legende Bob Marley',
             'eventdatum' => '2019-08-22',

@@ -29,8 +29,8 @@ class CreateEventsTable extends Migration
             $table->integer('artist_id')->unsigned()->index();
             $table->foreign('artist_id')->references('id')->on('artists')->onDelete('cascade');
 
-            $table->integer('event_id')->unsigned()->index();
-            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
+            $table->integer('location_id')->unsigned()->index();
+            $table->foreign('location_id')->references('id')->on('locations')->onDelete('cascade');
         });
     }
 

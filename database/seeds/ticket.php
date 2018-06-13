@@ -11,7 +11,7 @@ class ticket extends Seeder
      */
     public function run()
     {
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Flogging Molly',
             'platznummer' => '1',
             'platzreihe' => '1',
@@ -20,7 +20,7 @@ class ticket extends Seeder
             'preis' => '95.23',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Paul Kalkbrenner',
             'platznummer' => '15',
             'platzreihe' => '4',
@@ -29,7 +29,7 @@ class ticket extends Seeder
             'preis' => '105.00',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Eminem',
             'platznummer' => '25',
             'platzreihe' => '3',
@@ -38,7 +38,7 @@ class ticket extends Seeder
             'preis' => '110.95',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Nas',
             'platznummer' => '3',
             'platzreihe' => '2',
@@ -47,7 +47,7 @@ class ticket extends Seeder
             'preis' => '100.00',
 
     ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Rihanna',
             'platznummer' => '23',
             'platzreihe' => '8',
@@ -56,7 +56,7 @@ class ticket extends Seeder
             'preis' => '199.00',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Florian Silbereisen',
             'platznummer' => '1',
             'platzreihe' => '1',
@@ -65,7 +65,7 @@ class ticket extends Seeder
             'preis' => '82.00',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'The Offspring',
             'platznummer' => '33',
             'platzreihe' => '5',
@@ -74,7 +74,7 @@ class ticket extends Seeder
             'preis' => '65.00',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Rise Against',
             'platznummer' => '43',
             'platzreihe' => '3',
@@ -83,7 +83,7 @@ class ticket extends Seeder
             'preis' => '73.00',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Beatsteaks',
             'platznummer' => '31',
             'platzreihe' => '7',
@@ -92,7 +92,7 @@ class ticket extends Seeder
             'preis' => '105.00',
 
         ]);
-        DB::table('ticket')->insert([
+        DB::table('tickets')->insert([
             'kuenstler' => 'Bob Marley',
             'platznummer' => '28',
             'platzreihe' => '2',
