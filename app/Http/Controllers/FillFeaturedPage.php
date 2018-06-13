@@ -24,7 +24,7 @@ class FillFeaturedPage extends Controller
             ${'band' . $i}=DB::table('artists')->where('id', $i)->value('bandname');
             ${'img' . $i}=DB::table('artists')->where('id', $i)->value('picture');
         }
-        $band10 = DB::table('artists') -> where('id', 7) -> value('picture');
+        //$band10 = DB::table('artists') -> where('id', 7) -> value('picture');
         //$imgUrl = DB::table('artists') -> where('id', 1) -> value('picture');
         //band ist name der var auf featured.blade.php
         $data['bands'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];

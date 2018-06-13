@@ -11,6 +11,14 @@ class FillHomePage extends Controller
     public function returnFilledPage()
     {
 
+        For($i=1;$i<=6;$i++) {
+            ${'band' . $i}=DB::table('artists')->where('id', $i)->value('bandname');
+            ${'img' . $i}=DB::table('artists')->where('id', $i)->value('picture');
+        }
+        $data['bands'] = [$band1, $band2, $band3, $band4, $band5, $band6];
+        $imgNames['imgNames'] = [$img1, $img2, $img3, $img4, $img5, $img6];
+
+        /*
         $band1 = DB::table('artists')->where('id', '1')->value('bandname');
         $band2 = DB::table('artists')->where('id', '2')->value('bandname');
         $band3 = DB::table('artists')->where('id', '3')->value('bandname');
@@ -22,8 +30,8 @@ class FillHomePage extends Controller
         //return view('test')->with('band1',$band1,'band2',$band2);
 
         $data['users'] = [$band1, $band2, $band3, $band4, $band5, $band6];
-
-        return view('test', $data);
+        */
+        return view('test', $data, $imgNames);
 
         /* For Schleife und Array das übergeben werden sollte
         for ($x = 1; $x <= 6; $x++) {
