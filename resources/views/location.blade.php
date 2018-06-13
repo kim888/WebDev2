@@ -37,9 +37,19 @@
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
-                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                <a
-                    class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="login.html">Login</a></div>
+                </form>
+
+                @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                    <a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
+
+            </div>
         </div>
     </nav>
     <p class="lead text-center text-white" style="font-size:2em;">LOCATION</p>

@@ -58,6 +58,14 @@ Route::get('/artist.html', function (){
     return view('artist');
 });
 
+Route::get('/loggedIn.html', function (){
+    return view('loggedIn');
+});
+
+Route::get('/platzwahl.html', function (){
+    return view('platzwahl');
+});
+
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
