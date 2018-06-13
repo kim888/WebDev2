@@ -30,6 +30,8 @@ Route::get('/welcome.html', function () {
 });
 Route::get('/featured.html', 'FillFeaturedPage@returnFilledPage');
 
+Route::get('/profilBearbeiten.html', 'UserController@setAll');
+
 Route::get('/genre.html', function () {
     return view('genre');
 });
@@ -51,9 +53,7 @@ Route::get('/location.html', function (){
 Route::get('/userProfil.html', function (){
     return view('userProfil');
 });
-Route::get('/profilBearbeiten.html', function (){
-    return view('profilBearbeiten');
-});
+
 Route::get('/artist.html', function (){
     return view('artist');
 });

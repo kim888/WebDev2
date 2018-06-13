@@ -61,45 +61,59 @@
                 <div class="col-md-8">
                     <h1 style="color:rgb(255,255,255);">Profil bearbeiten</h1>
                     <hr>
+
+
                     <div class="form-row">
+
+
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Vorname</label><input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Vorname</label>
+                                <input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;" value={{$yolo[0]}} >
+
+                            </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[1]}}></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="strasse"  style="border:1px solid #348899;border-radius:40px;" value={{$yolo[2]}}></div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label style="color:rgb(255,255,255);">Hausnummer</label>
+                                <input class="form-control" type="text" name="nummer" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[3]}} ></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="plz" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[4]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Hausnummer</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[5]}}></div>
                         </div>
                     </div>
+                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[6]}}></div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" value={{$yolo[7]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[8]}}></div>
                         </div>
                     </div>
-                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"></div>
-                    <div class="form-row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"></div>
-                        </div>
-                    </div>
+
                     <hr>
                     <div class="form-row">
                         <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit" style="background-color:#348899;border:1px solid #348899;border-radius:40px;">SAVE </button><button class="btn btn-danger form-btn" type="reset" style="background-color:#979c9c;border:1px solid #7a243a;border-radius:40px;">CANCEL </button></div>
                     </div>
                 </div>
+
             </div>
+
+
         </form>
     </div>
     <div class="footer-basic">
