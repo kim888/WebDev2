@@ -29,7 +29,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
-        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
@@ -47,15 +47,15 @@
     <p class="lead text-center text-white" style="font-size:2em;">LOCATION</p>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">BERLIN</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">BERLIN</p>
         </div>
     </div>
-    <div class="simple-slider">
+    <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-wrapper" style="height: 500px">
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -64,15 +64,15 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">BAYREUTH</p>
+            <p class="float-left location_name" style=" color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">BAYREUTH</p>
         </div>
     </div>
-    <div class="simple-slider">
+    <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-wrapper"style="height: 500px">
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -81,15 +81,15 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">HOF</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HOF</p>
         </div>
     </div>
-    <div class="simple-slider">
+    <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-wrapper" style="height: 500px">
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -98,15 +98,15 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">ERFURT</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ERFURT</p>
         </div>
     </div>
-    <div class="simple-slider">
+    <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-wrapper" style="height: 500px">
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -115,15 +115,15 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">MÜNCHEN</p>
+            <p class="float-left" style="color:black; font-size:16px;width:200px;margin:0px;padding-left:20px;">MÜNCHEN</p>
         </div>
     </div>
-    <div class="simple-slider">
+    <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-wrapper" style="height: 500px">
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>

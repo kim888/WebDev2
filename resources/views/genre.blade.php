@@ -29,8 +29,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
-        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
-                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
@@ -47,7 +46,7 @@
     <p class="lead text-center text-white" style="font-size:2em;">Genre</p>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">ROCK</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ROCK</p>
         </div>
     </div>
     <div class="simple-slider">
@@ -64,7 +63,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">HIP HOP</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HIP HOP</p>
         </div>
     </div>
     <div class="simple-slider">
@@ -81,7 +80,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">POP</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">POP</p>
         </div>
     </div>
     <div class="simple-slider">
@@ -98,7 +97,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="font-size:16px;width:200px;margin:0px;padding-left:20px;">ELECTRO/HOUSE</p>
+            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ELECTRO/HOUSE</p>
         </div>
     </div>
     <div class="simple-slider">
