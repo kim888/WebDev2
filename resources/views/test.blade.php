@@ -52,10 +52,10 @@
 
     Code vor Hover Effekt:
 
-    <?php for($i = 0; $i < count($users); $i++) : ?>
+    <?php for($i = 0; $i < count($bands); $i++) : ?>
         <div class="col-sm-6 col-md-5 col-lg-4 item">
             <div class="box"><i class="fa fa-map-marker icon"></i>
-                <h3 class="name"><?= $users[$i]?></h3>
+                <h3 class="name"><?= $bands[$i]?></h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
             </div>
             <?php endfor ?>
@@ -65,52 +65,21 @@
 <div class="container">
     <div class="row justify-content-center features">
 
-        <?php for($i = 0; $i < count($users); $i++) : ?>
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
-            <div class="box">
+        <?php for($i = 0; $i < count($bands); $i++) : ?>
+        <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:98% auto; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' . $imgNames[$i] . '.jpg')}})">
+            <div class="box" style="background: rgba(0,0,0,0); width: 100px; height: 300px;">
                 <div class="view overlay">
-                    <i class="fa fa-map-marker icon">
-                        <h3 class="name"><?= $users[$i]?></h3>
-                    </i>
+                    <i class="thingy"></i>
                     <div class="mask flex-center rgba-red-strong">
-                        <p class="description text-white"><?= $users[$i]?></p>
-                        <a href="#" class="learn-more">Learn more »</a></div>
-                </div></div></div>
-        <?php endfor ?>
-
-            {{--
-                        <div class="col-sm-6 col-md-5 col-lg-4 item">
-                            <div class="box"><i class="fa fa-map-marker icon"></i>
-                                <h3 class="name">{{$user1}}</h3>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4 item">
-                            <div class="box"><i class="fa fa-clock-o icon"></i>
-                                <h3 class="name">{{$user2}}</h3>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4 item">
-                            <div class="box"><i class="fa fa-list-alt icon"></i>
-                                <h3 class="name">{{$user3}}</h3>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4 item">
-                            <div class="box"><i class="fa fa-leaf icon"></i>
-                                <h3 class="name">{{$user4}}</h3>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4 item">
-                            <div class="box"><i class="fa fa-plane icon"></i>
-                                <h3 class="name">{{$user5}}</h3>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4 item">
-                            <div class="box"><i class="fa fa-phone icon"></i>
-                                <h3 class="name">{{$user6}}</h3>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
-                        </div>--}}
+                        <p class="description text-white"><?= $bands[$i]?></p>
+                        <a href="#" class="learn-more">Learn more »</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <?php endfor ?>
     </div>
+</div>
 
 <!--Karten zu Location Berlin, Hof, Erfurt, Bayreuth, München
 
