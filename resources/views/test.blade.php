@@ -37,8 +37,20 @@
                 <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
             </ul>
             <form class="form-inline mr-auto" target="_self">
-                <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
-            </form><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="login.html">Login</a></div>
+                <div class="form-group"><label for="search-field">
+                        <i class="fa fa-search"></i>
+                    </label><input class="form-control search-field" type="search" name="search" id="search-field">
+                </div>
+            </form>
+
+            @auth
+                <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+            @endauth
+            @guest()
+                <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+            @endguest
+        </div>
     </div>
 </nav>
 
@@ -69,7 +81,7 @@
         <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:98% auto; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' . $imgNames[$i] . '.jpg')}})">
             <div class="box" style="background: rgba(0,0,0,0); width: 100px; height: 300px;">
                 <div class="view overlay">
-                    <i class="thingy"></i>
+                    <i class="fa fa-map-marker icon"></i>
                     <div class="mask flex-center rgba-red-strong">
                         <p class="description text-white"><?= $bands[$i]?></p>
                         <a href="#" class="learn-more">Learn more »</a>
