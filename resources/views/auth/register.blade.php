@@ -20,7 +20,7 @@
 <body>
 <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
     <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
-                                                                                                                                                                                                                                           data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                                                                                                                                                                                                                      data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav">
                 <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
@@ -72,7 +72,7 @@
                 <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block" role="button">{{ __('Register') }}</button>
+                <button type="submit" class="btn btn-primary btn-block" role="button" >{{ __('Register') }}</button>
             </div>
             <a href="login.html" class="already">You already have an account? Login here.</a></form>
 
@@ -80,25 +80,7 @@
     </div>
 
 
-    <?php
-        /*
-    $registration_empfeanger = $name;
-    $registration_betreff = "Danke für die Anmeldung";
-    $registration_text =
-    $echo = "Hallo
-    Du hast dich grade erfolgreich bei NEITQEY registriert.
 
-    Wir wünschen dir ganz viel Spaß.
-
-    Mit freundlichen Grüßen, dein  NEITQEY Team ";
-
-    $mailer = new Mailers\UserMailer($registration_empfeanger);
-    $mailer->welcomeMail()->deliver();
-
-    //mail($registration_empfeanger, $registration_betreff, $registration_text, "FROM:kimberly.schlenzig@hof-university.de<support>");
-        */
-
-?>
 </div>
 
 
