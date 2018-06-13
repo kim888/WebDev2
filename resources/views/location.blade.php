@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location</title>
-    <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
@@ -17,14 +16,14 @@
     <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Profile-Edit-Form.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Profile-Edit-Form.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Simple-Slider.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
-    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
 
 </head>
 
