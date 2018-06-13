@@ -36,6 +36,8 @@ Route::get('/genre.html', function () {
 Route::get('/login.html', function () {
     return view('auth/login');
 });
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 Route::get('/signup.html', function () {
     return view('auth/register');
 });
@@ -57,7 +59,7 @@ Route::get('/artist.html', function (){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 
