@@ -1,8 +1,10 @@
 <?php
+use Illuminate\Mail\Mailable;
 
 class TestMail extends Mailable
 {
-    use Queueable, SerializesModels;
+    use Illuminate\Bus\Queueable;
+    use Illuminate\Queue\SerializesModels;
 
     public function __construct() {
 

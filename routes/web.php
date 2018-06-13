@@ -37,6 +37,7 @@ Route::get('/login.html', function () {
     return view('auth/login');
 });
 Route::get('/signup.html', function () {
+    //Mail::to("test@test.de")->send(new \App\Mail\RegisterMail());
     return view('auth/register');
 });
 Route::get('/warenkorb.html', function () {

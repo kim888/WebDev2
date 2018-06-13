@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Mail;
 
 //use Bestmomo\LaravelEmailConfirmation\Traits\RegistersUsers;
 
@@ -74,13 +75,7 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
 
-        $verifyUser = VerifyUser::create([
-            'user_id' => $user->id,
-            'token' => str_random(40)
-        ]);
-
-        Mail::to($user->email)->send(new VerifyMail($user));
-        Mail::to("test@test.de")->send(new TestMail());
+        Mail::to("test@test.de")->send(new \App\Mail\RegisterMail());
 
         return $user;
     }
