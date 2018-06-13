@@ -35,6 +35,7 @@
 </nav>
 <div class="login-dark" style="background-color:#343642;background-image:url({{asset('/img/Konzertsaal.jpg')}});">
     <form method="post" style="padding-bottom:40px;" action="http://localhost:8000/login">
+        @csrf
         <h2 class="sr-only">Login Form</h2>
         <div class="illustration" style="height:225px;"><img src="{{asset('/img/Logo.png')}}" style="background-size:auto;background-repeat:no-repeat;background-position:none;width:220px;"></div>
         <div class="form-group"><input id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" type="email" name="email" placeholder="Email" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:20px;" value="{{ old('email') }}" required autofocus>
@@ -52,7 +53,11 @@
             @endif
         </div>
         <div class="form-check"><input class="form-check-input" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }} id="formCheck-1"><label class="form-check-label" for="formCheck-1">Remember Me</label></div>
-        <div class="form-group"><a class="btn btn-primary btn-block" type="submit" role="button" href="userProfl.html" style="background-color:#348899;border-radius:20px;">{{ __('Login') }}</a></div><a href="{{ route('password.request') }}" class="forgot">{{ __('Forgot Your Password?') }}</a></form>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit" role="button" style="background-color:#348899;border-radius:20px;">{{ __('Login') }}</button>
+        </div>
+        <a href="{{ route('password.request') }}" class="forgot">{{ __('Forgot Your Password?') }}</a>
+    </form>
 </div>
 <div class="footer-basic">
     <footer>

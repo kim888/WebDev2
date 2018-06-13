@@ -23,7 +23,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
-        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
@@ -33,9 +33,12 @@
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div><a class="btn btn-primary" role="button" href="warenkorb.html"
-                        style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                    <a
-                        class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                        style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                    @if (Auth::user()->active)
+                    <button class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">
+                        SignUp
+                    </button>
+                    @endif
                         <div class="btn-group"><button class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
                                 type="button" style="background-color:#348899;border-radius:40px;"></button>
                             <div class="dropdown-menu" role="menu" style="background-color:#979c9c;border-radius:40px;"><a class="dropdown-item" role="presentation" href="profilBearbeiten.html" data-bs-hover-animate="pulse" style="color:#348899;border-radius:60px;">Profil bearbeiten</a><a class="dropdown-item" role="presentation" href="index.html"
@@ -46,8 +49,12 @@
         </div>
     </nav>
     <div class="row">
-        <div class="col" style="background-color:#ffffff;max-height:none;min-height:1;height:208px;"><img src="assets/img/Bildschirmfoto 2018-05-14 um 12.19.05.png">
-            <p style="font-size:60px;margin-top:-145px;margin-right:-40px;margin-bottom:15px;margin-left:none;width:550px;height:121px;padding-left:0px;">Max Mustermann</p>
+        <div class="col" style="background-color:#ffffff;max-height:none;min-height:1px;height:208px;">
+            <img src="{{asset('/img/maxmustermann.png')}}">
+            <p style="font-size:60px;margin-right:-40px;margin-bottom:15px;margin-left:none;width:550px;height:121px;padding-left:0px; color: black;">
+                <!-- Hier username des aktuellen users anzeigen-->
+                {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
+            </p>
         </div>
     </div><p class = "pFavoriten" style="font-size:30px;">Favoriten</p>
     <div class="features-boxed">
