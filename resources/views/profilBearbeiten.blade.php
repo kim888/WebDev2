@@ -52,7 +52,7 @@
         </div>
     </nav>
     <div class="container profile profile-view" id="profile">
-        <form>
+        <form method="post" action="{{route('register')}}">
             <div class="form-row profile-row">
                 <div class="col-md-4 relative">
                     <div class="avatar">
@@ -68,40 +68,40 @@
 
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group"><label style="color:rgb(255,255,255);">Vorname</label>
-                                <input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;" value={{$yolo[0]}} >
+                                <input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[0]}} >
 
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[1]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[1]}}></div>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="strasse"  style="border:1px solid #348899;border-radius:40px;" value={{$yolo[2]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="strasse"  style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[2]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group">
                                 <label style="color:rgb(255,255,255);">Hausnummer</label>
-                                <input class="form-control" type="text" name="nummer" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[3]}} ></div>
+                                <input class="form-control" type="text" name="nummer" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[3]}} ></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="plz" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[4]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="plz" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[4]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[5]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[5]}}></div>
                         </div>
                     </div>
-                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[6]}}></div>
+                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[6]}}></div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" value={{$yolo[7]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[7]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"  value={{$yolo[8]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[8]}}></div>
                         </div>
                     </div>
 
