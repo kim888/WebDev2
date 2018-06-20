@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
     <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
@@ -104,11 +104,11 @@
                 <p class="copyright">NEITQEY © 2018</p>
         </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="assets/js/Media-Slider-Bootstrap-3.js"></script>
-    <script src="assets/js/Profile-Edit-Form.js"></script>
+    <script src="{{asset("assets/js/jquery.min.js")}}"></script>
+    <script src="{{asset("assets/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{asset("assets/js/bs-animation.js")}}"></script>
+    <script src="{{asset("assets/js/Media-Slider-Bootstrap-3.js")}}"></script>
+    <script src="{{asset("assets/js/Profile-Edit-Form.js")}}"></script>
 </body>
 
 </html>

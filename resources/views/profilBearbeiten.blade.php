@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")"}}">
     <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
 
 </head>
 
@@ -52,7 +52,7 @@
         </div>
     </nav>
     <div class="container profile profile-view" id="profile">
-        <form method="post" action="{{route('register')}}">
+        <form method="post" action="/profilSpeichern">
             <div class="form-row profile-row">
                 <div class="col-md-4 relative">
                     <div class="avatar">
@@ -63,45 +63,46 @@
                     <hr>
 
 
+
                     <div class="form-row">
 
 
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group"><label style="color:rgb(255,255,255);">Vorname</label>
-                                <input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[0]}} >
+                                <input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo->vorname}}>
 
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[1]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo->nachname}}></div>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="strasse"  style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[2]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="strasse"  style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo->strasse}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group">
                                 <label style="color:rgb(255,255,255);">Hausnummer</label>
-                                <input class="form-control" type="text" name="nummer" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[3]}} ></div>
+                                <input class="form-control" type="text" name="nummer" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo->hausnummer}} ></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="plz" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[4]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="plz" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo->postleitzahl}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[5]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo->ort}}></div>
                         </div>
                     </div>
-                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[6]}}></div>
+                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo->email}}></div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[7]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo->password}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[8]}}></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"></div>
                         </div>
                     </div>
 
@@ -130,11 +131,11 @@
                 <p class="copyright">NEITQEY © 2018</p>
         </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="assets/js/Media-Slider-Bootstrap-3.js"></script>
-    <script src="assets/js/Profile-Edit-Form.js"></script>
+    <script src="{{asset("assets/js/jquery.min.js")}}"></script>
+    <script src="{{asset("assets/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{asset("assets/js/bs-animation.js")}}"></script>
+    <script src="{{asset("assets/js/Media-Slider-Bootstrap-3.js")}}"></script>
+    <script src="{{asset("assets/js/Profile-Edit-Form.js")}}"></script>
 </body>
 
 </html>

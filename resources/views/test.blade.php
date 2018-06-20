@@ -15,7 +15,7 @@
     <link href="{{ asset('bootstrap/css/mdb.css') }}" media="all" rel="stylesheet" type="text/css" />
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/FavIcon.png")}}">
 
 
     <!--Link für angularjs

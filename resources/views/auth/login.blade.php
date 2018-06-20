@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
     <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
