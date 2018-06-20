@@ -20,6 +20,23 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('FavIcon.png')}}">
 
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'NFL Chargers 2007';
+            src: url('{{ public_path('public/fonts/NFLCHARG.woff')}}');
+            format('Web Open Font Format')
+        font-weight: 100;
+        }
+
+       p .ueber{
+            font-family: 'NFL Chargers 2007';
+        }
+
+
+
+    </style>
+
 </head>
 
 <body>
@@ -49,7 +66,7 @@
         </div>
 </nav>
 
-<p class="lead text-center text-white" style="font-size:2em;">FEATURED</p>
+<p class="lead text-center text-white ueber" style="font-size:2em;">FEATURED</p>
 
 {{--
     Beispiel für Hover:

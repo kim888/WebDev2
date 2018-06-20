@@ -18,6 +18,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/FavIcon.png")}}">
 
 
+
     <!--Link für angularjs
     <script src="/node_modules/angular/angular.js"></script>
     -->

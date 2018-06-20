@@ -25,6 +25,23 @@
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
 
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'NFL Chargers 2007';
+            src: url('{{ public_path('public/fonts/NFLCHARG.woff')}}');
+        format('Web Open Font Format')
+        font-weight: 100;
+        }
+
+        p .ueber{
+            font-family: 'NFL Chargers 2007';
+        }
+
+
+
+    </style>
+
 </head>
 
 <body>
@@ -34,7 +51,7 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="genre.html">Genre</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Location</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
@@ -43,10 +60,10 @@
                     class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
     </nav>
-    <p class="lead text-center text-white" style="font-size:2em;">Genre</p>
+    <p class="lead text-center text-white ueber" style="font-size:2em;">GENRE</p>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ROCK</p>
+            <p class="float-left ueber" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ROCK</p>
         </div>
     </div>
     <div class="simple-slider" style ="height: 500px">
@@ -63,7 +80,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HIP HOP</p>
+            <p class="float-left ueber" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HIP HOP</p>
         </div>
     </div>
     <div class="simple-slider" style = "height: 500px">
@@ -80,7 +97,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">POP</p>
+            <p class="float-left ueber" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">POP</p>
         </div>
     </div>
     <div class="simple-slider" style = "height: 500px">
@@ -97,7 +114,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ELECTRO/HOUSE</p>
+            <p class="float-left ueber" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ELECTRO/HOUSE</p>
         </div>
     </div>
     <div class="simple-slider" style = "height: 500px">
