@@ -37,39 +37,34 @@
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
-<<<<<<< HEAD
-                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                <a
-                    class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
-=======
                 </form>
 
                 @auth
-                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                    <a class="btn btn-primary" role="button" href="/warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
                     <a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>
                     <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
                 @endauth
                 @guest()
-                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
-                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                    <a class="btn btn-light action-button" role="button" href="/signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="/login.html">Login</a>
                 @endguest
 
             </div>
->>>>>>> a93da9f9e546aab0c4672e09e07b1850f0576ed4
         </div>
     </nav>
     <div class="row">
-        <div class="col" style="background-color:#ffffff;max-height:none;min-height:1;height:208px;"><img src="assets/img/justin_timberlake_2.jpg" style="width:282px;max-width:282px;">
+        <div class="col" style="background-color:#ffffff;max-height:none;min-height:1;height:208px;"><img src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width:282px;max-width:282px;">
             <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
                 {{$bandinfos[0]}}
             </p>
         </div>
     </div>
-    <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-color:#ffffff;">
+    
+    <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-color:#ffffff; height: 500px">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active"><img class="w-100 d-block" src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width: 800px;" alt="Slide Image"></div>
-            <div class="carousel-item"><img class="w-100 d-block" src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width: 800px;"  alt="Slide Image"></div>
-            <div class="carousel-item"><img class="w-100 d-block" src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width: 800px;"  alt="Slide Image"></div>
+            <div class="carousel-item active"><img class="w-100 d-block" src="{{asset('img/dbImages/konzert01.jpg')}}" style="background-size: cover" alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="{{asset('img/dbImages/konzert02.jpg')}}" style="width: 800px;"  alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="{{asset('img/dbImages/konzert03.jpg')}}" style="width: 800px;"  alt="Slide Image"></div>
         </div>
         <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
         <ol
