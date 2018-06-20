@@ -8,6 +8,10 @@
     <title>Test</title>
     </head>
     <body>
-        <p>Test E-Mail-Vorlage </p>
+        <p>Betreff: Registrierng NEITQEY </p>
+        <p>Herzlich Willkommen bei NEITQEY. Du hast dich erfolgreich registriert.</p>
+        <p>Wir freuen uns dich in unserer NEITQEY Community begruessen zu duerfen.</p>
+        <p>Liebe Grüße,</p>
+        <p>Dein NEITQEY-Team.</p>
 </body>
 </html>

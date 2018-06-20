@@ -26,6 +26,7 @@
 </head>
 
 <body>
+@csrf
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
         <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -38,6 +39,7 @@
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div><a class="btn btn-primary" role="button" href="warenkorb.html"
                         style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+
                     <a
                         class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
                         <div class="btn-group"><button class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
@@ -50,7 +52,7 @@
         </div>
     </nav>
     <div class="container profile profile-view" id="profile">
-        <form>
+        <form method="post" action="{{route('register')}}">
             <div class="form-row profile-row">
                 <div class="col-md-4 relative">
                     <div class="avatar">
@@ -59,45 +61,59 @@
                 <div class="col-md-8">
                     <h1 style="color:rgb(255,255,255);">Profil bearbeiten</h1>
                     <hr>
+
+
                     <div class="form-row">
+
+
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Vorname</label><input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Vorname</label>
+                                <input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[0]}} >
+
+                            </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Nachname</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[1]}}></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="strasse"  style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[2]}}></div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label style="color:rgb(255,255,255);">Hausnummer</label>
+                                <input class="form-control" type="text" name="nummer" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[3]}} ></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Straße</label><input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="plz" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[4]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Hausnummer</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[5]}}></div>
                         </div>
                     </div>
+                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[6]}}></div>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Postleitzahl</label><input class="form-control" type="text" name="firstname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo[7]}}></div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="lastname" style="border:1px solid #348899;border-radius:40px;"></div>
+                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo[8]}}></div>
                         </div>
                     </div>
-                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"></div>
-                    <div class="form-row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"></div>
-                        </div>
-                    </div>
+
                     <hr>
                     <div class="form-row">
                         <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit" style="background-color:#348899;border:1px solid #348899;border-radius:40px;">SAVE </button><button class="btn btn-danger form-btn" type="reset" style="background-color:#979c9c;border:1px solid #7a243a;border-radius:40px;">CANCEL </button></div>
                     </div>
                 </div>
+
             </div>
+
+
         </form>
     </div>
     <div class="footer-basic">

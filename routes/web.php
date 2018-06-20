@@ -32,6 +32,8 @@ Route::get('/welcome.html', function () {
 });
 Route::get('/featured.html', 'FillFeaturedPage@returnFilledPage');
 
+Route::get('/profilBearbeiten.html', 'UserController@setAll');
+
 Route::get('/genre.html', function () {
     return view('genre');
 });
@@ -53,11 +55,26 @@ Route::get('/location.html', function (){
 Route::get('/userProfil.html', function (){
     return view('userProfil');
 });
+<<<<<<< HEAD
 Route::get('/profilBearbeiten.html', function (){
     return view('profilBearbeiten');
 });
 
 Route::get('artist/{bandname}', 'FillArtistPage@getArtistInfo');
+=======
+
+Route::get('/artist.html', function (){
+    return view('artist');
+});
+>>>>>>> a93da9f9e546aab0c4672e09e07b1850f0576ed4
+
+Route::get('/loggedIn.html', function (){
+    return view('loggedIn');
+});
+
+Route::get('/platzwahl.html', function (){
+    return view('platzwahl');
+});
 
 Auth::routes();
 
