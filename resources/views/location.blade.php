@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="{{asset('/css/Carousel-Hero.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css")}}">
     <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Simple-Slider.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
-<link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
 
 </head>
 
@@ -144,13 +144,13 @@
                 <p class="copyright">NEITQEY © 2018</p>
         </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Media-Slider-Bootstrap-3.js"></script>
-    <script src="assets/js/Profile-Edit-Form.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="{{asset("assets/js/jquery.min.js")}}"></script>
+    <script src="{{asset("assets/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{asset("assets/js/bs-animation.js")}}"></script>
+    <script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js")}}"></script>
+    <script src="{{asset("assets/js/Media-Slider-Bootstrap-3.js")}}"></script>
+    <script src="{{asset("assets/js/Profile-Edit-Form.js")}}"></script>
+    <script src="{{asset("assets/js/Simple-Slider.js")}}"></script>
 </body>
 
 </html>

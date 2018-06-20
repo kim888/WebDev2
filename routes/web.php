@@ -34,6 +34,9 @@ Route::get('/featured.html', 'FillFeaturedPage@returnFilledPage');
 
 Route::get('/profilBearbeiten.html', 'UserController@setAll');
 
+Route::get('/profilSpeichern', 'ProfilBearbeitenController@saveProfile');
+
+
 Route::get('/genre.html', function () {
     return view('genre');
 });

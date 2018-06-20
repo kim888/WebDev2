@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
 
 </head>
 
@@ -101,9 +101,9 @@
                 <p class="copyright">NEITQEY © 2018</p>
         </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
+    <script src="{{asset("assets/js/jquery.min.js")}}"></script>
+    <script src="{{asset("assets/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{asset("assets/js/bs-animation.js")}}"></script>
 </body>
 
 </html>
