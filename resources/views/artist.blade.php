@@ -90,19 +90,20 @@
     </div>
 
     <!--Dropdown auswahl der Veranstaltung-->
+    <?php for($i = 0; $i < count($events); $i++) : ?>
     <div role="tablist" id="accordion" style="margin-top:20px;">
-        <div class="card">
-            <div class="card-header" id="headingOne">
+            <div class="card">
+            <div class="card-header" id="heading{{$events[$i]}}">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="width: 100%;">
-                        Berlin Sa. 21.07.18
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$events[$i]}}" aria-expanded="true" aria-controls="collapse{{$events[$i]}}" style="width: 100%;">
+                        Berlin Sa. 21.07.18 {{$events[$i]}}
                     </button>
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapse{{$events[$i]}}" class="collapse hide" aria-labelledby="heading{{$events[$i]}}" data-parent="#accordionExample">
                 <div class="card-body">
-                    <p class="card-body-p" style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: 18:00 Uhr</p>
+                    <p class="card-body-p" style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: {{$events[1]}}</p>
                     <p class="card-body-p" style="font-size:16px;width:211px;height:0px;margin:0px;margin-top:35px;">Location: Pierre Boulez Saal</p>
                     <p class="card-body-p" style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Album: Man of the Woods</p>
                     <button class="btn btn-primary" type="button" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;">
@@ -115,7 +116,7 @@
             </div>
         </div>
     </div>
-
+    <?php endfor ?>
     <!--Footer-->
     <div class="footer-basic">
         <footer>

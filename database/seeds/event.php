@@ -12,10 +12,12 @@ class event extends Seeder
     public function run()
     {
         DB::table('events')->insert([
+            'beschreibung' => 'Eminem in Berlin',
             'datum' => '2018-05-12',
             'beginn' => '19:25:00',
             'locationId' => '1',
-        ]);
+            'artist_id' => '3',
+        ]);/*
         DB::table('events')->insert([
             'datum' => '2018-11-02',
             'beginn' => '21:20:00',
@@ -60,6 +62,6 @@ class event extends Seeder
             'datum' => '2019-08-22',
             'beginn' => '20:30:00',
             'locationId' => '6',
-        ]);
+        ]);*/
     }
 }

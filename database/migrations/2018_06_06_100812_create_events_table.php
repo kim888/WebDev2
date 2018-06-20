@@ -15,11 +15,15 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-
+            $table->text('beschreibung');
             $table->date('datum');
             $table->time('beginn');
+            //$table->date('updatedatum');
             $table->integer('locationId');
+            $table->string('artist_id');
+            //$table->integer('eventId');
+            $table->timestamps();
+
         });
 
         Schema::create('artist_event', function (Blueprint $table) {
@@ -29,8 +33,8 @@ class CreateEventsTable extends Migration
             $table->integer('artist_id')->unsigned()->index();
             $table->foreign('artist_id')->references('id')->on('artists')->onDelete('cascade');
 
-            $table->integer('location_id')->unsigned()->index();
-            $table->foreign('location_id')->references('id')->on('locations')->onDelete('cascade');
+            $table->integer('event_id')->unsigned()->index();
+            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
         });
     }
 
