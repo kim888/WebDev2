@@ -11,10 +11,13 @@
 |
 */
 
+use Illuminate\Support\Facades\App;
+
 Route::get('/', 'FillHomePage@returnFilledPage');
 Route::get('/test.html', 'FillHomePage@returnFilledPage');
 Route::get('/index.html', 'FillHomePage@returnFilledPage');
 Route::get('/home', 'FillHomePage@returnFilledPage');
+Route::get('/index.html', 'FillHomePage@returnFilledPage');
 
 /* warum geht das so nicht?
 Route::get('/{url}', function ($url) {
@@ -23,7 +26,6 @@ Route::get('/{url}', function ($url) {
 
 })->where(['url' => '/index.html|/']);
 */
-
 
 Route::get('/welcome.html', function () {
     return view('welcome');
@@ -54,6 +56,13 @@ Route::get('/userProfil.html', function (){
     return view('userProfil');
 });
 
+Route::get('/profilBearbeiten.html', function (){
+    return view('profilBearbeiten');
+});
+
+Route::get('artist/{bandname}', 'FillArtistPage@getArtistInfo');
+
+
 Route::get('/artist.html', function (){
     return view('artist');
 });
@@ -72,3 +81,6 @@ Auth::routes();
 
 Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 
+//Route::get('/search','SearchBarController@index');
+
+//Route::get('/search1','SearchBarController@search');
