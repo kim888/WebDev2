@@ -21,9 +21,15 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-<link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{asset('FavIcon.png')}}">
 
 </head>
+<style>
+
+    .card-body-p{
+        color: black;
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
@@ -52,14 +58,22 @@
             </div>
         </div>
     </nav>
+    <!--Artist Header-->
     <div class="row">
-        <div class="col" style="background-color:#ffffff;max-height:none;min-height:1;height:208px;"><img src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width:282px;max-width:282px;">
+        <div class="col" style="background-color:#ffffff;max-height:none;min-height:100px;height:208px;">
+            <img src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="height: 100%; background-size: cover">
             <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
                 {{$bandinfos[0]}}
             </p>
         </div>
     </div>
-    
+<!--
+    <video width="1280" height="720" controls>
+        <source src= '{{ url('rain.mp4') }} ' type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+-->
+    <!--Bildergalerie-->
     <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-color:#ffffff; height: 500px">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active"><img class="w-100 d-block" src="{{asset('img/dbImages/konzert01.jpg')}}" style="background-size: cover" alt="Slide Image"></div>
@@ -74,50 +88,35 @@
             <li data-target="#carousel-1" data-slide-to="2"></li>
             </ol>
     </div>
-    <div role="tablist" id="accordion-1" style="margin-top:20px;">
-        <div class="card" style="border-radius:0px;">
-            <div class="card-header" role="tab">
-                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1" data-bs-hover-animate="flash" style="color:rgb(0,0,0);">Berlin Sa. 21.07.18</a></h5>
+
+    <!--Dropdown auswahl der Veranstaltung-->
+    <div role="tablist" id="accordion" style="margin-top:20px;">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="width: 100%;">
+                        Berlin Sa. 21.07.18
+                    </button>
+                </h5>
             </div>
-            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1" style="height:200px;">
+
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    <p style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: 18:00 Uhr</p>
-                    <p style="font-size:16px;width:211px;height:0px;margin:0px;margin-top:35px;">Location: Pierre Boulez Saal</p>
-                    <p style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Album: Man of the Woods</p><button class="btn btn-primary" type="button" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;">Favorisieren</button>
-                    <a
-                        class="btn btn-primary" role="button" href="platzwahl.html" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;margin-left:35px;">Platz buchen</a>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="margin:0px;margin-top:20px;border-radius:0px;">
-            <div class="card-header" role="tab" style="margin-top:0px;">
-                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2" data-bs-hover-animate="flash" style="color:rgb(0,0,0);">Stuttgart Sa. 28.07.18&nbsp;</a></h5>
-            </div>
-            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1" style="height:200px;">
-                <div class="card-body">
-                    <p style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: 18:00 Uhr</p>
-                    <p style="width:287px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Location: Hans-Martin-Schleyer-Halle</p>
-                    <p style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Album: Man of the Woods</p><button class="btn btn-primary" type="button" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;">Favorisieren</button>
-                    <a
-                        class="btn btn-primary" role="button" href="platzwahl.html" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;margin-left:35px;">Platz buchen</a>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="margin-top:20px;border-radius:0px;">
-            <div class="card-header" role="tab">
-                <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3" data-bs-hover-animate="flash" style="color:rgb(0,0,0);">Frankfurt am Main Fr. 03.08.18&nbsp;</a></h5>
-            </div>
-            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1" style="height:200px;">
-                <div class="card-body">
-                    <p style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: 18:00 Uhr</p>
-                    <p style="width:202px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Location: Jahrhunderthalle</p>
-                    <p style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Album: Man of the Woods</p><button class="btn btn-primary" type="button" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;">Favorisieren</button>
-                    <a
-                        class="btn btn-primary" role="button" href="platzwahl.html" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;margin-left:35px;">Platz buchen</a>
+                    <p class="card-body-p" style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: 18:00 Uhr</p>
+                    <p class="card-body-p" style="font-size:16px;width:211px;height:0px;margin:0px;margin-top:35px;">Location: Pierre Boulez Saal</p>
+                    <p class="card-body-p" style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Album: Man of the Woods</p>
+                    <button class="btn btn-primary" type="button" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;">
+                        Favorisieren
+                    </button>
+                    <button class="btn btn-primary" role="button" href="platzwahl.html" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;margin-left:35px;">
+                        Platz buchen
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Footer-->
     <div class="footer-basic">
         <footer>
             <div class="social"><a href="http://www.instagram.com"><i class="icon ion-social-instagram"></i></a><a href="http://www.snapchat.de"><i class="icon ion-social-snapchat"></i></a><a href="http://www.twitter.de"><i class="icon ion-social-twitter"></i></a><a href="http://www.facebook.de"><i class="icon ion-social-facebook"></i></a></div>
@@ -132,11 +131,12 @@
                 <p class="copyright">NEITQEY © 2018</p>
         </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="assets/js/Media-Slider-Bootstrap-3.js"></script>
-    <script src="assets/js/Profile-Edit-Form.js"></script>
+
+    <script src="{{asset('/js/jquery.min.js')}}"></script>
+    <script src="{{asset('/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/js/bs-animation.js')}}"></script>
+    <script src="{{asset('/js/Media-Slider-Bootstrap-3.js')}}"></script>
+    <script src="{{asset('/js/Profile-Edit-Form.js')}}"></script>
 </body>
 
 </html>
