@@ -27,31 +27,33 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
-        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container"><a class="navbar-brand" href="/index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/featured.html">Featured</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/genre.html">Genre</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
-                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
                 <a
                     class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
     </nav>
     <div class="row">
         <div class="col" style="background-color:#ffffff;max-height:none;min-height:1;height:208px;"><img src="assets/img/justin_timberlake_2.jpg" style="width:282px;max-width:282px;">
-            <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto;">Justin Timberlake</p>
+            <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
+                {{$bandinfos[0]}}
+            </p>
         </div>
     </div>
     <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-color:#ffffff;">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active"><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
-            <div class="carousel-item"><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
-            <div class="carousel-item"><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
+            <div class="carousel-item active"><img class="w-100 d-block" src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width: 800px;" alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width: 800px;"  alt="Slide Image"></div>
+            <div class="carousel-item"><img class="w-100 d-block" src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="width: 800px;"  alt="Slide Image"></div>
         </div>
         <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
         <ol

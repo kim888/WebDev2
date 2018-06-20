@@ -70,7 +70,7 @@
                                  </i>
                                 <div class="mask flex-center rgba-red-strong">
                                     <p class="description text-white"><?= $bands[$i]?></p>
-                                    <a href="#" class="learn-more">Learn more »</a></div>
+                                    <a href="artist/{{$bands[$i]}}" class="learn-more">Learn more »</a></div>
                             </div>
                         </div>
                 </div>
