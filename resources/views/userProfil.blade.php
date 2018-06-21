@@ -19,6 +19,34 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
 
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <style type="text/css">
+
+        p, h3{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
+        }
+
+        #profil{
+            font-family: 'Bougan SSi';
+            font-size:1.5em;
+        }
+
+        .btn{
+            font-family: 'Bougan SSi';
+            font-size: 1em;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -40,7 +68,7 @@
                         SignUp
                     </button>
                     @endif
-                        <div class="btn-group"><button class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
+                        <div class="btn-group"><button id="profil" class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
                                 type="button" style="background-color:#348899;border-radius:40px;"></button>
                             <div class="dropdown-menu" role="menu" style="background-color:#979c9c;border-radius:40px;"><a class="dropdown-item" role="presentation" href="profilBearbeiten.html" data-bs-hover-animate="pulse" style="color:#348899;border-radius:60px;">Profil bearbeiten</a><a class="dropdown-item" role="presentation" href="index.html"
                                     data-bs-hover-animate="pulse" style="color:#7a243a;border-radius:60px;">Logout</a></div>
@@ -52,12 +80,12 @@
     <div class="row">
         <div class="col" style="background-color:#ffffff;max-height:none;min-height:1px;height:208px;">
             <img src="{{asset('/img/maxmustermann.png')}}">
-            <p style="font-size:60px;margin-right:-40px;margin-bottom:15px;margin-left:none;width:550px;height:121px;padding-left:0px; color: black;">
+            <p class="ueber" style="font-size:60px;margin-right:-40px;margin-bottom:15px;margin-left:none;width:550px;height:121px;padding-left:0px; color: #348899;">
                 <!-- Hier username des aktuellen users anzeigen-->
                 {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
             </p>
         </div>
-    </div><p class = "pFavoriten" style="font-size:30px;">Favoriten</p>
+    </div><p class = "pFavoriten ueber">Favoriten</p>
     <div class="features-boxed">
         <div class="container">
             <div class="row justify-content-center features">

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")"}}">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
     <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
@@ -22,6 +22,25 @@
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
+
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <style type="text/css">
+
+
+        p{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+    </style>
+
 
 </head>
 

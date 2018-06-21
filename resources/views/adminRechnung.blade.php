@@ -21,7 +21,28 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('resources/assets/img/FavIcon.png')}}">
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <style type="text/css">
+
+        .form-group {
+            font-family: 'Bougan SSi';
+            font-size: 1.5em;
+        }
+
+        .btn{
+            font-family: 'Bougan SSi';
+            font-size: 1em;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +73,7 @@
             </div>
         </div>
     </nav>
-    <p style="width:100%;height:auto;font-size:40px;color:rgb(255,255,255);">Rechnungen bearbeiten</p>
+    <p class="ueber" style="width:100%;height:auto;color:rgb(255,255,255);">Rechnungen bearbeiten</p>
     <div>
         <div class="container">
             <div class="row">

@@ -78,6 +78,10 @@ Route::get('/platzwahl.html', function (){
     return view('platzwahl');
 });
 
+Route::get('/adminRechnung.html', function (){
+    return view('adminRechnung');
+});
+
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');

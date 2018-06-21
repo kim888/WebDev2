@@ -19,6 +19,20 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
 
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <style type="text/css">
+
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -40,7 +54,7 @@
         </div>
     </nav>
 
-    <p class="lead text-center text-white" style="font-size:2em;">WARENKORB</p>
+    <p class="lead text-center text-white ueber">WARENKORB</p>
 
     <div class="footer-basic">
         <footer>

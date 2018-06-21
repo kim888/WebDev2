@@ -20,6 +20,23 @@
     <link href="{{ asset('fonts/font-awesome.min.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
 
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <style type="text/css">
+
+        .Text{
+            font-family: "Bougan SSi";
+            font-size: 3em;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:15em;
+        }
+    </style>
+
 </head>
 
 
@@ -51,7 +68,7 @@
                         @endguest
 
                 </div>
-            </nav><p>404</p>
+            </nav><p class="ueber" >404</p>
 <p class = "Text">Ups... Hier scheint kein Event zu sein</p></div>
     </div>
     <div class="footer-basic">

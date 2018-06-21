@@ -18,6 +18,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/FavIcon.png")}}">
 
 
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <style type="text/css">
+
+        p, h3{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
+        }
+
+        </style>
+
 
     <!--Link für angularjs
     <script src="/node_modules/angular/angular.js"></script>

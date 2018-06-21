@@ -20,21 +20,20 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('FavIcon.png')}}">
 
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
 
     <style type="text/css">
-        @font-face {
-            font-family: 'NFL Chargers 2007';
-            src: url('{{ public_path('public/fonts/NFLCHARG.woff')}}');
-            format('Web Open Font Format')
-        font-weight: 100;
+
+        p, h3{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
         }
 
-       p .ueber{
-            font-family: 'NFL Chargers 2007';
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
         }
-
-
-
     </style>
 
 </head>
@@ -64,9 +63,11 @@
                 <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
             @endguest
         </div>
+    </div>
 </nav>
 
-<p class="lead text-center text-white ueber" style="font-size:2em;">FEATURED</p>
+
+<p class="lead text-center text-white ueber"> FEATURED</p>
 
 {{--
     Beispiel für Hover:
