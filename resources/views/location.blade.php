@@ -76,7 +76,7 @@
                     <div class="dropdown">
                         <button class="dropbtn" href="userProfil.html">Profil</button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                            <a href="profilBearbeiten.blade.php">Profil bearbeiten</a>
                         </div>
                     </div>
                     <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
