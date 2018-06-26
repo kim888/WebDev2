@@ -27,7 +27,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
-        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
@@ -52,7 +52,7 @@
 
             </div>
         </div>
-    </nav><img src="assets/img/Platzwahl.png" style="width:100%;height:auto;">
+    </nav><img src="{{asset('/img/Platzwahl.jpg')}}" style="width:100%;height:auto;">
     <div style="width:992;padding-left:0px;margin-left:0px;padding-right:0px;background-color:#ffffff;margin-top:-35px;padding-top:0px;">
         <div class="container">
             <div class="row" style="margin-top:35px;background-color:#ffffff;border-top:1px solid #348899;">

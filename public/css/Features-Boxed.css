@@ -79,7 +79,7 @@ p {
   margin-left:auto;
   margin-right:auto;
   font-size:14em;
-  color:white;
+  color:black;
   margin-top:60px;
   text-align:center;
 }
@@ -110,3 +110,43 @@ p {
 #search-field {
   border-bottom:1px solid #348899;
 }
+
+.pFavoriten {
+  color:#fff;
+}
+
+.p404 .text {
+  color:white;
+}
+
+.p404 {
+  color:white;
+}
+
+.text {
+  font-size:2em;
+  color:black;
+  margin-top:-60px;
+}
+
+.Text {
+  color:black;
+}
+
+.profilBlock {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+button, input {
+  border-radius:20px;
+}
+
+.col-3.float-left {
+  padding-left:20px;
+}
+
+.carousel-indicators .active {
+  background-color:#348899;
+}
+
