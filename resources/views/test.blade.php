@@ -27,9 +27,9 @@
 
     <style type="text/css">
 
-        p, h3{
+        p, h3, marquee{
             font-family: 'Bougan SSi';
-            font-size: 3em;
+            font-size: 2em;
         }
 
         </style>
