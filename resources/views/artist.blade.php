@@ -26,11 +26,27 @@
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
 
 </head>
-<style>
+<style type="text/css">
 
     .card-body-p{
         color: black;
     }
+
+    p, h3{
+        font-family: 'Bougan SSi';
+        font-size: 3em;
+    }
+
+   
+
+
+    .ueber{
+        font-family: 'NFLCHARG';
+        font-weight:600;
+        font-size:3em;
+    }
+
+</style>
 </style>
 
 <body>
@@ -72,7 +88,7 @@
     <div class="row">
         <div class="col" style="background-color:#ffffff;max-height:none;min-height:100px;height:208px;">
             <img src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="height: 100%; background-size: cover">
-            <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
+            <p class="text-left ueber" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
                 {{$bandinfos[0]}}
             </p>
         </div>
