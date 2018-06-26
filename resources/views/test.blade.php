@@ -4,16 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEITQEY_V1.0</title>
-    <link href="{{ asset('css/styles.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/Navigation-with-Search.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/Footer-Basic.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/Features-Boxed.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('fonts/font-awesome.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('bootstrap/css/mdb.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <title>Home</title>
 
+    <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
+    <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('bootstrap/css/mdb.css')}}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/FavIcon.png")}}">
 
@@ -73,7 +77,11 @@
 
 
 <div data-bs-parallax-bg="true" style="height:500px;background-image:url({{ asset('img/duotone.png') }});background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+<br>
 
+
+<!--Life Ticker-->
+<marquee style = "color: white">Hallo ihr Stricher!</marquee>
 
 
 
