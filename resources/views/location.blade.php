@@ -27,6 +27,7 @@
 
 
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
 
     <style type="text/css">
 
@@ -57,6 +58,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
+<<<<<<< HEAD
                     <div class="form-group">
                         <label for="search-field">
                             <i class="fa fa-search"></i>
@@ -67,12 +69,37 @@
                 <a
                     class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
+=======
+                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
+                </form>
+
+                @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                    {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
+
+                    <div class="dropdown">
+                        <button class="dropbtn" href="userProfil.html">Profil</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
+
+
+            </div>
+>>>>>>> f4efa25dc38895a33b1cc40eabbe03c814c74b5d
     </nav>
     <p class="lead text-center text-white ueber">LOCATION</p>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
             <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">BERLIN</p>
         </div>
+
     </div>
     <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">

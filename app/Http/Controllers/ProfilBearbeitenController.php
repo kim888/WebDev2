@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\View;
 use App\Http\Requests;
 use Auth;
+use function Symfony\Component\HttpKernel\Tests\controller_func;
 
 class ProfilBearbeitenController extends Controller
 {
@@ -20,21 +21,38 @@ class ProfilBearbeitenController extends Controller
      */
     public function saveProfile()
 {
-    DB::table('users')->where('name', Auth::user()->name)->get()->first()->update([
-        'vorname'-> $_POST['firstname'],
-        'nachname'-> $_POST['lastname'],
-        'telefonnummer'-> $_POST['strasse'],
-        'ort' -> $_POST['stadt'],
-        'strasse' -> $_POST['strasse'],
-        'hausnummer' -> $_POST['nummer'],
-        'land' -> $_POST['strasse'],
-        'postleitzahl' -> $_POST['plz'],
-        'email' -> $_POST['email']
-    ]);
-    Auth::user()->name->get()->first()->save();
+//    DB::table('users')->where('name', Auth::user()->name)->get()->first()->update([
+//        'vorname'-> $_POST['firstname'],
+//        'nachname'-> $_POST['lastname'],
+//        'telefonnummer'-> $_POST['strasse'],
+//        'ort' -> $_POST['stadt'],
+//        'strasse' -> $_POST['strasse'],
+//        'hausnummer' -> $_POST['nummer'],
+//        'land' -> $_POST['strasse'],
+//        'postleitzahl' -> $_POST['plz'],
+//        'email' -> $_POST['email']
+//    ]);
+//    Auth::user()->name->get()->first()->save();
 
     $curr_user = DB::table('users')->where('name', Auth::user()->name)->get()->first();
-    return view('profilBearbeiten')->with("yolo", $curr_user);
+
+    $curr_user->vorname =  $_POST['firstname'];
+    $curr_user->nachname =  $_POST['lastname'];
+    $curr_user->strasse =  $_POST['strasse'];
+    $curr_user->hausnummer = $_POST['nummer'];
+    $curr_user->postleitzahl =  $_POST['plz'];
+    $curr_user->ort =  $_POST['stadt'];
+    $curr_user->email =  $_POST['email'];
+
+
+    $curr_user->save();
+
+    echo($curr_user);
+
+
+    //return view('profilBearbeiten')->with("yolo", $curr_user);
+
+    return view('/profilBearbeiten.html')->with("yolo", $curr_user);
 }
 
 

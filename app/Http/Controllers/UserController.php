@@ -15,8 +15,9 @@ class UserController extends Controller
 
         $curr_user = DB::table('users')->where('name', Auth::user()->name)->get()->first();
 
+
 //        $data['yolo'] = [$curr_user->vorname, $curr_user->nachname, $curr_user->geburtsdatum, $curr_user->strasse, $curr_user->hausnummer, $curr_user->ort, $curr_user->telefonnummer, $curr_user->land, $curr_user->postleitzahl, $curr_user->email, ""];
-        return view('profilBearbeiten')->with("yolo", $curr_user);
+        return view('/profilBearbeiten')->with("yolo", $curr_user);
         }
 
 }
