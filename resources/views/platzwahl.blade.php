@@ -52,7 +52,7 @@
 
             </div>
         </div>
-    </nav><img src="{{asset('/img/Platzwahl.png')}}" style="width:100%;height:auto;">
+    </nav><img src="{{asset('/img/Platzwahl.jpg')}}" style="width:100%;height:auto;">
     <div style="width:992;padding-left:0px;margin-left:0px;padding-right:0px;background-color:#ffffff;margin-top:-35px;padding-top:0px;">
         <div class="container">
             <div class="row" style="margin-top:35px;background-color:#ffffff;border-top:1px solid #348899;">
