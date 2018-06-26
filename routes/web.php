@@ -34,7 +34,7 @@ Route::get('/featured.html', 'FillFeaturedPage@returnFilledPage');
 
 Route::get('/profilBearbeiten.html', 'UserController@setAll');
 
-Route::get('/profilSpeichern', 'ProfilBearbeitenController@saveProfile');
+Route::post('/profilSpeichern', 'ProfilBearbeitenController@saveProfile');
 
 
 Route::get('/genre.html', function () {
@@ -59,9 +59,7 @@ Route::get('/userProfil.html', function (){
     return view('userProfil');
 });
 
-Route::get('/profilBearbeiten.html', function (){
-    return view('profilBearbeiten');
-});
+
 
 Route::get('artist/{bandname}', 'FillArtistPage@getArtistInfo');
 
