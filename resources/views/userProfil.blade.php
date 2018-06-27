@@ -129,6 +129,18 @@
             </div>
         </div>
     </div>
+
+
+    <!--TEST-->
+    <div style="color: white;">
+    <ul>
+        <li>Name: {{Auth::user()->name}}</li>
+        <li>E-Mail: {{Auth::user()->email}}</li>
+        <li>E-Mail: {{Auth::user()->ort}}</li>
+
+    </ul>
+    </div>
+
     <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="width:100%;max-width:none;min-width:auto;min-height:0;color:black;background-color:#fff;">Anstehend - Gekauft</button>
         <div class="dropdown-menu"
             role="menu" style="width:100%;"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
