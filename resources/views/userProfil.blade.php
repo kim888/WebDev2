@@ -103,7 +103,7 @@
     <div class="row">
         <div class="col" style="background-color:#ffffff;max-height:none;min-height:1px;height:208px;">
             <img src="{{asset('/img/maxmustermann.png')}}">
-            <p class="ueber" style="font-size:60px;margin-right:-40px;margin-bottom:15px;margin-left:none;width:550px;height:121px;padding-left:0px; color: #348899;">
+            <p class="ueber" style="font-size:60px;margin-top:-145px;margin-right:-40px;margin-bottom:15px;margin-left:none;width:550px;height:121px;padding-left:0px; color: black;">
                 <!-- Hier username des aktuellen users anzeigen-->
                 {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
             </p>
