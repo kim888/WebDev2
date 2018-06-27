@@ -63,22 +63,24 @@
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
 
 
-                    @auth
-                        <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                        {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
+                     @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                    {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
 
-                        <div class="dropdown">
-                            <button class="dropbtn" href="userProfil.html">Profil</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="profilBearbeiten.html">Profil bearbeiten</a>
-                            </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
                         </div>
-                        <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
-                    @endauth
-                    @guest()
-                        <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
-                        <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
-                    @endguest
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
 
 
 
@@ -128,6 +130,19 @@
             </div>
         </div>
     </div>
+
+
+    <!--TEST
+    <div style="color: white;">
+    <ul>
+        <li>Name: {{Auth::user()->name}}</li>
+        <li>E-Mail: {{Auth::user()->email}}</li>
+        <li>E-Mail: {{Auth::user()->ort}}</li>
+
+    </ul>
+    </div>
+    -->
+
     <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="width:100%;max-width:none;min-width:auto;min-height:0;color:black;background-color:#fff;">Anstehend - Gekauft</button>
         <div class="dropdown-menu"
             role="menu" style="width:100%;"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>

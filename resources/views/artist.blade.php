@@ -39,7 +39,7 @@
         font-size: 3em;
     }
 
-   
+
 
 
     .ueber{
@@ -71,7 +71,9 @@
                     {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
 
                     <div class="dropdown">
-                        <button class="dropbtn" href="userProfil.html">Profil</button>
+                        <div class="dropbtn">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
                         <div id="myDropdown" class="dropdown-content">
                             <a href="profilBearbeiten.html">Profil bearbeiten</a>
                         </div>
@@ -82,7 +84,6 @@
                     <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
                     <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
                 @endguest
-
             </div>
         </div>
     </nav>

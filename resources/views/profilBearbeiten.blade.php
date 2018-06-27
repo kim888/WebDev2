@@ -64,12 +64,18 @@
 
                 </form>
 
-                @auth
+                 @auth
                     <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
                     {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
 
                     <div class="dropdown">
+<<<<<<< HEAD
                         <button class="dropbtn" href="userProfil.html" style="border-radius: 40px"; >Profil</button>
+=======
+                        <div class="dropbtn">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
+>>>>>>> b4e9b820889a99a371b6a906066bead420b7916a
                         <div id="myDropdown" class="dropdown-content">
                             <a href="profilBearbeiten.html">Profil bearbeiten</a>
                         </div>
@@ -81,16 +87,11 @@
                     <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
                 @endguest
 
-
             </div>
         </div>
     </nav>
     <div class="container profile profile-view" id="profile">
         <form method="POST" action="/profilSpeichern">
-
-
-
-
 
             <div class="form-row profile-row">
                 <div class="col-md-4 relative">
@@ -133,15 +134,6 @@
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group"><label style="color:rgb(255,255,255);">Stadt</label><input class="form-control" type="text" name="stadt" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo->ort}}></div>
-                        </div>
-                    </div>
-                    <div class="form-group"><label style="color:rgb(255,255,255);">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" style="border:1px solid #348899;border-radius:40px;"  placeholder={{$yolo->email}}></div>
-                    <div class="form-row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Password </label><input class="form-control" type="password" name="password" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;" placeholder={{$yolo->password}}></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group"><label style="color:rgb(255,255,255);">Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" style="border:1px solid #348899;border-radius:40px;"></div>
                         </div>
                     </div>
 
