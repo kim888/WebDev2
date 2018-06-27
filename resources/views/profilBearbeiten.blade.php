@@ -21,11 +21,10 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
-
-
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 
     <style type="text/css">
 
@@ -70,7 +69,7 @@
                     {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
 
                     <div class="dropdown">
-                        <button class="dropbtn" href="userProfil.html">Profil</button>
+                        <button class="dropbtn" href="userProfil.html" style="border-radius: 40px"; >Profil</button>
                         <div id="myDropdown" class="dropdown-content">
                             <a href="profilBearbeiten.html">Profil bearbeiten</a>
                         </div>

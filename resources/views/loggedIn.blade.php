@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 </head>
 
 <body>

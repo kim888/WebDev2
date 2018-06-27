@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="{{asset('/css/Simple-Slider.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
-
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 
     <style type="text/css">
 

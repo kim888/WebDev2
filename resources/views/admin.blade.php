@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="{{asset("assets/css/Simple-Slider.css")}}">
     <link rel="stylesheet" href="{{asset("assets/css/styles.css")}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href={{asset("/FavIcon.png")}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 </head>
 
 <body>

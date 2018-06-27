@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEITQEY_V3.0</title>
+    <title>Warenkorb</title>
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
@@ -22,6 +22,8 @@
 
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 
     <style type="text/css">
 
