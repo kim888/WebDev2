@@ -52,7 +52,7 @@ class ProfilBearbeitenController extends Controller
 
     //return view('profilBearbeiten')->with("yolo", $curr_user);
 
-    return view('/profilBearbeiten.html')->with("yolo", $curr_user);
+    return view('/profilBearbeiten.html');
 }
 
 
