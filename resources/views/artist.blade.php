@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
 
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
 </head>
 <style type="text/css">
 

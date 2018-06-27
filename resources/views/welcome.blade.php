@@ -8,12 +8,12 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="{{asset}}""https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="{{asset("https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">")}}
 
         <!-- Styles -->
 
         <!-- FavIcon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 
         <style>
             html, body {

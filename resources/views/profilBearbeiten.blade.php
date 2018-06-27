@@ -21,11 +21,10 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
-
-
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 
     <style type="text/css">
 
@@ -65,15 +64,19 @@
 
                 </form>
 
-                  @auth
+                 @auth
                     <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
                     {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
 
-                    <div class="dropdown1">
-                        <div class="dropbtn1">
+                    <div class="dropdown">
+<<<<<<< HEAD
+                        <button class="dropbtn" href="userProfil.html" style="border-radius: 40px"; >Profil</button>
+=======
+                        <div class="dropbtn">
                              <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
                         </div>
-                        <div id="myDropdown" class="dropdown-content1">
+>>>>>>> b4e9b820889a99a371b6a906066bead420b7916a
+                        <div id="myDropdown" class="dropdown-content">
                             <a href="profilBearbeiten.html">Profil bearbeiten</a>
                         </div>
                     </div>
@@ -83,8 +86,6 @@
                     <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
                     <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
                 @endguest
-
-
 
             </div>
         </div>

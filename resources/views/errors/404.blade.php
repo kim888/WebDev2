@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
 
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
     <style type="text/css">
 
         .Text{
