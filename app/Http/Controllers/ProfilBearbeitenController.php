@@ -31,7 +31,7 @@ class ProfilBearbeitenController extends Controller
     //$curr_user = DB::table('users')->where('name', Auth::user()->name)->get()->first();
     $curr_user = \App\User::whereName(Auth::user()->name)->first();
 
-    //TODO prüfen, ob wert vorhanden und damit geändert
+
 
         if($_POST['firstname']!=null)
         {
