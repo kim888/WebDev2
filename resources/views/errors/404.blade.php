@@ -20,6 +20,27 @@
     <link href="{{ asset('fonts/font-awesome.min.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
 
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+    <style type="text/css">
+
+        .Text{
+            font-family: "Bougan SSi";
+            font-size: 3em;
+            color: white;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:15em;
+            color: white;
+        }
+    </style>
+
 </head>
 
 
@@ -40,9 +61,20 @@
                             <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
                         </form>
 
+
                         @auth
                             <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                            <a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>
+                            {{--<a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>--}}
+
+                            <div class="dropdown">
+                                <button class="dropbtn" href="userProfil.html">Profil</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                                </div>
+                            </div>
+
+
+
                             <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
                         @endauth
                         @guest()
@@ -51,7 +83,7 @@
                         @endguest
 
                 </div>
-            </nav><p>404</p>
+            </nav><p class="ueber" >404</p>
 <p class = "Text">Ups... Hier scheint kein Event zu sein</p></div>
     </div>
     <div class="footer-basic">

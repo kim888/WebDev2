@@ -21,14 +21,34 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
-<link rel="shortcut icon" type="image/x-icon" href="{{asset('FavIcon.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('FavIcon.png')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 
 </head>
-<style>
+<style type="text/css">
 
     .card-body-p{
         color: black;
     }
+
+    p, h3{
+        font-family: 'Bougan SSi';
+        font-size: 3em;
+    }
+
+
+
+
+    .ueber{
+        font-family: 'NFLCHARG';
+        font-weight:600;
+        font-size:3em;
+    }
+
+</style>
 </style>
 
 <body>
@@ -45,15 +65,29 @@
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
                 </form>
 
-                @auth
-                    <a class="btn btn-primary" role="button" href="/warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                    <a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>
+   @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+
+
+                    <div class="dropdown1">
+                        <div class="dropbtn1">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content1">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
                     <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
                 @endauth
                 @guest()
-                    <a class="btn btn-light action-button" role="button" href="/signup.html" style="background-color:#979c9c;">Sign Up</a>
-                    <a class="btn btn-light action-button" role="button" href="/login.html">Login</a>
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
                 @endguest
+
+
+
+
+
 
             </div>
         </div>
@@ -62,7 +96,7 @@
     <div class="row">
         <div class="col" style="background-color:#ffffff;max-height:none;min-height:100px;height:208px;">
             <img src="{{asset('img/dbImages/artists/' . $bandinfos[1] . '.jpg')}}" style="height: 100%; background-size: cover">
-            <p class="text-left" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
+            <p class="text-left ueber" style="font-size:40px;margin-top:-145px;margin-right:0px;margin-bottom:15px;margin-left:none;width:600px;height:121px;padding-left:30px;max-width:450px;min-width:auto; color: black;">
                 {{$bandinfos[0]}}
             </p>
         </div>

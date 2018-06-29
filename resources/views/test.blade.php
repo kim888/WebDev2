@@ -4,18 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEITQEY_V1.0</title>
-    <link href="{{ asset('css/styles.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/Navigation-with-Search.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/Footer-Basic.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/Features-Boxed.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('fonts/font-awesome.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('fonts/ionicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('bootstrap/css/mdb.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
+    <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('bootstrap/css/mdb.css')}}">
+
+    <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/FavIcon.png")}}">
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+    <style type="text/css">
+
+        p, h3, marquee{
+            font-family: 'Bougan SSi';
+            font-size: 2em;
+        }
+
+        </style>
 
 
     <!--Link für angularjs
@@ -45,23 +63,35 @@
                     <input class="form-control search-field" type="search" name="search" id="search-field">
                 </div>
             </form>
+   @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
 
-            @auth
-                <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                <a class="btn btn-light action-button" role="button" href="userProfil.html" style="background-color:#979c9c;">Profil</a>
-                <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
-            @endauth
-            @guest()
-                <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
-                <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
-            @endguest
+
+                    <div class="dropdown1">
+                        <div class="dropbtn1">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content1">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
         </div>
     </div>
 </nav>
 
 
 <div data-bs-parallax-bg="true" style="height:500px;background-image:url({{ asset('img/duotone.png') }});background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+<br>
 
+
+<!--Life Ticker-->
+<marquee style = "color: white">Hallo ihr Stricher!</marquee>
 
 
 

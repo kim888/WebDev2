@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEITQEY_V3.0</title>
+    <title>Warenkorb</title>
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
@@ -18,6 +18,23 @@
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
+
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+    <style type="text/css">
+
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+    </style>
+
 
 </head>
 
@@ -34,13 +51,33 @@
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
                     <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
-                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                <a
-                    class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="login.html">Login</a></div>
-        </div>
+                </form>
+
+
+               @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+
+
+                    <div class="dropdown1">
+                        <div class="dropbtn1">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content1">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
+
+
+
     </nav>
 
-    <p class="lead text-center text-white" style="font-size:2em;">WARENKORB</p>
+    <p class="lead text-center text-white ueber">WARENKORB</p>
 
     <div class="footer-basic">
         <footer>

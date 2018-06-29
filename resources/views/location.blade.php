@@ -23,7 +23,28 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Simple-Slider.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
-<link rel="shortcut icon" type="image/x-icon" href="{{asset("/FavIcon.png")}}">
+
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+    <style type="text/css">
+
+
+        p{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+
+    </style>
 
 </head>
 
@@ -38,17 +59,45 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
-                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
-                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                <a
-                    class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
+
+                    <div class="form-group">
+                        <label for="search-field">
+                            <i class="fa fa-search"></i>
+                        </label>
+                        <input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field">
+                    </div>
+                </form>
         </div>
+
+                @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+
+
+                    <div class="dropdown1">
+                        <div class="dropbtn1">
+                             <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content1">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
+
+
+            </div>
+
     </nav>
-    <p class="lead text-center text-white" style="font-size:2em;">LOCATION</p>
+    <p class="lead text-center text-white ueber">LOCATION</p>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
             <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">BERLIN</p>
         </div>
+
     </div>
     <div class="simple-slider" style="height: 500px">
         <div class="swiper-container">
@@ -81,7 +130,7 @@
     </div>
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left" style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HOF</p>
+            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HOF</p>
         </div>
     </div>
     <div class="simple-slider" style="height: 500px">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEITQEY_V6.0</title>
+    <title>SignUp</title>
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
@@ -15,6 +15,26 @@
     <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
+
+
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+    <style type="text/css">
+
+
+        .form-group{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
+        }
+
+        .ueber{
+            font-family: 'NFLCHARG';
+        }
+
+    </style>
+
+
 </head>
 
 <body>
@@ -41,7 +61,7 @@
 
         <form method="POST" action="{{route('register')}}">
             @csrf
-            <h2 class="text-center"><strong>Create</strong> an account.</h2>
+            <h2 class="text-center ueber" style="font-size:3em;"><strong>Create</strong> an account.</h2>
             <div class="form-group ">
                 <input id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" type="text" name="name" placeholder="Username" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('name') }}" required autofocus>
                 @if ($errors->has('name'))

@@ -107,7 +107,8 @@
   }
 }
 
-.navigation-clean-search .form-inline .search-field:focus {
-  border-bottom:1px solid #ccc;
+.navigation-clean-search .form-inline .search-field{
+  border-bottom:1px solid #348899;
+
 }
 
