@@ -129,7 +129,7 @@
             <div class="card">
             <div class="card-header" id="heading{{$events[$i]}}">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$events[$i]}}" aria-expanded="true" aria-controls="collapse{{$events[$i]}}" style="width: 100%;">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$events[$i]}}" aria-expanded="true" aria-controls="collapse{{$events[$i]}}" style="width: 100%; text-decoration: none; color: black;">
                         Berlin Sa. 21.07.18 {{$events[$i]}}
                     </button>
                 </h5>
