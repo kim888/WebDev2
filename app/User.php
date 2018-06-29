@@ -2,8 +2,10 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * App\User
@@ -40,6 +42,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereVorname($value)
  * @mixin \Eloquent
+ * @property int $confirmed
+ * @property string|null $confirmation_code
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereConfirmationCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereConfirmed($value)
  */
 class User extends Authenticatable
 {
@@ -63,13 +69,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function ticket(){
-        return $this -> hasMany('ticket');
-    }
-    public function location(){
-        return $this -> belongsTo('location');
-    }
-    public function rechnung(){
-        return $this -> hasMany('rechnung');
+    public function tickets(){
+        return $this -> hasMany(Ticket::class);
     }
 }

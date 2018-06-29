@@ -15,12 +15,16 @@ class CreateTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('kuenstler');
-            $table->integer('platznummer');
-            $table->string('platzreihe');
-            $table->date('datum');
-            $table->time('uhrzeit');
-            $table->decimal('preis');
+
+            $table->boolean('bezahlt');
+            $table->date('kaufdatum');
+
+            $table->integer('user_id')->unsigned()->index()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->integer('event_id')->unsigned()->index()->nullable();;
+            $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

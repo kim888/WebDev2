@@ -11,6 +11,16 @@ class location extends Seeder
      */
     public function run()
     {
+
+        $location1 = new App\Location();
+        $location1 -> ort = 'Berlin';
+        $location1 -> strasse = 'Berg';
+        $location1 -> nummer = '34';
+        $location1 -> land = 'Deutschland';
+        $location1 -> plz = '95000';
+        $location1 -> save();
+
+        /*
         DB::table('locations')->insert([
             'ort' => 'feilitzsch',
             'strasse' => 'berggasse',
@@ -67,6 +77,7 @@ class location extends Seeder
             'nummer' => '132',
             'plz' => '98353',
         ]);
+        */
 
     }
 }

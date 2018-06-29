@@ -11,57 +11,51 @@ class event extends Seeder
      */
     public function run()
     {
-        DB::table('events')->insert([
-            'beschreibung' => 'Eminem in Berlin',
-            'datum' => '2018-05-12',
-            'beginn' => '19:25:00',
-            'locationId' => '1',
-            'artist_id' => '3',
-        ]);/*
-        DB::table('events')->insert([
-            'datum' => '2018-11-02',
-            'beginn' => '21:20:00',
-            'locationId' => '2',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2019-02-09',
-            'beginn' => '20:36:00',
-            'locationId' => '3',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2019-06-18',
-            'beginn' => '22:30:00',
-            'locationId' => '4',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2019-02-01',
-            'beginn' => '22:30:00',
-            'locationId' => '5',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2019-01-14',
-            'beginn' => '21:30:00',
-            'locationId' => '3',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2018-12-03',
-            'beginn' => '23:00:00',
-            'locationId' => '7',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2018-09-09',
-            'beginn' => '20:15:00',
-            'locationId' => '6',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2019-02-18',
-            'beginn' => '20:00:00',
-            'locationId' => '8',
-        ]);
-        DB::table('events')->insert([
-            'datum' => '2019-08-22',
-            'beginn' => '20:30:00',
-            'locationId' => '6',
-        ]);*/
+        $event1 = new App\Event();
+        $event1->eventname = 'Flogging Molly Live im Olympiastadion';
+        $event1->beschreibung = 'Flogging Molly Live in Berlin';
+        $event1->mindestalter = '18';
+        $event1->datum = '2018-05-12';
+        $event1->beginn = '19:25:00';
+        $event1->ort = 'Berlin';
+        $event1->strasse = 'Potsdamer Platz';
+        $event1->hausnummer = '56';
+        $event1->land = 'Deutschland';
+        $event1->plz = '09876';
+        $event1->preis = '59.99';
+        $event1->plaetze = '5000';
+        $event1->save();
+
+
+        $event2 = new App\Event();
+        $event2->eventname = 'Flogging Molly Live in München';
+        $event2->beschreibung = 'Flogging Molly Live in München';
+        $event2->mindestalter = '18';
+        $event2->datum = '2018-05-30';
+        $event2->beginn = '19:30:00';
+        $event2->ort = 'München';
+        $event2->strasse = 'BMW Platz';
+        $event2->hausnummer = '01';
+        $event2->land = 'Deutschland';
+        $event2->plz = '08876';
+        $event2->preis = '59.99';
+        $event2->plaetze = '4000';
+        $event2->save();
+
+        $event3 = new App\Event();
+        $event3->eventname = 'Flogging Molly Live in Stuttgart';
+        $event3->beschreibung = 'Flogging Molly Live in Stuttgart';
+        $event3->mindestalter = '18';
+        $event3->datum = '2018-06-05';
+        $event3->beginn = '19:30:00';
+        $event3->ort = 'Stuttgart';
+        $event3->strasse = 'Porsche Platz';
+        $event3->hausnummer = '01';
+        $event3->land = 'Deutschland';
+        $event3->plz = '80076';
+        $event3->preis = '59.99';
+        $event3->plaetze = '3000';
+        $event3->save();
+
     }
 }

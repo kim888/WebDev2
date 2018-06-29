@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
+
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateEventsTable extends Migration
 {
@@ -15,13 +16,18 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('eventname');
             $table->text('beschreibung');
+            $table->integer('mindestalter');
             $table->date('datum');
             $table->time('beginn');
-            //$table->date('updatedatum');
-            $table->integer('locationId');
-            $table->string('artist_id');
-            //$table->integer('eventId');
+            $table->string('ort');
+            $table->string('strasse');
+            $table->integer('hausnummer');
+            $table->string('land');
+            $table->integer('plz');
+            $table->float('preis');
+            $table->integer('plaetze');
             $table->timestamps();
 
         });
@@ -30,8 +36,10 @@ class CreateEventsTable extends Migration
             $table->increments('id');
             $table->timestamps();
 
+
             $table->integer('artist_id')->unsigned()->index();
             $table->foreign('artist_id')->references('id')->on('artists')->onDelete('cascade');
+
 
             $table->integer('event_id')->unsigned()->index();
             $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
@@ -46,6 +54,8 @@ class CreateEventsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('events');
-        Schema::dropIfExists('artists');
+        Schema::dropIfExists('artist_event');
     }
+
 }
+

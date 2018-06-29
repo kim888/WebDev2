@@ -17,8 +17,6 @@ class CreateArtistsTable extends Migration
             $table->increments('id');
             $table->string('bandname');
             $table->string('genre');
-            $table->integer('locationId');
-            $table->date('tourdatum');
             $table->string('picture');
             $table->timestamps();
         });

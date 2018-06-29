@@ -24,13 +24,14 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Artist whereTourdatum($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Artist whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
  */
 class Artist extends Model
 {
     protected $fillable = array('id', 'bandname', 'genre', 'locationId', 'tourdatum','picture');
 
-    public function event(){
-        return $this->hasMany('events');
+    public function events(){
+        return $this->belongsToMany('App\Event');
     }
 
 }

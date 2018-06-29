@@ -1,7 +1,9 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Faker\Generator as Faker;
 
 class users extends Seeder
 {
@@ -10,8 +12,37 @@ class users extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
+        $user1 = new App\User();
+        $user1 -> vorname = $faker->firstNameMale;
+        $user1 -> nachname = 'testboy';
+        //$user1 -> geburtsdatum = '1920-05-03';
+        //$user1 -> telefonnummer = '09281444';
+        $user1 -> ort = 'feilitzsch';
+        $user1 -> strasse = 'Berggasse';
+        $user1 -> hausnummer = '22';
+        $user1 -> land = 'Deutschland';
+        $user1 -> postleitzahl = '95028';
+        $user1 -> email = 'tim_gr@web.de';
+        $user1 -> password = Hash::make('hallo');
+        $user1 -> save();
+
+        $user2 = new App\User();
+        $user2 -> vorname = 'Peterzwegat';
+        $user2 -> nachname = 'Zwegat';
+        //$user2 -> geburtsdatum = '1920-05-03';
+        //$user2 -> telefonnummer = '09281444';
+        $user2 -> ort = 'hof';
+        $user2 -> strasse = 'Hauptstrasse';
+        $user2 -> hausnummer = '13';
+        $user2 -> land = 'Deutschland';
+        $user2 -> postleitzahl = '95028';
+        $user2 -> email = 'zwegat@web.de';
+        $user2 -> password = Hash::make('hallo');
+        $user2 -> save();
+
+        /*
         DB::table('users')->insert([
             'name' => 'testeroni',
             'vorname' => 'testeroni',
@@ -151,6 +182,6 @@ class users extends Seeder
             'postleitzahl' => '91627',
             'email' => 'Hahnenkopf@gmx.de',
             'password' => 'HahnimKorb123',
-        ]);
+        ]);*/
     }
 }
