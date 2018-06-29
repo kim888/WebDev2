@@ -29,7 +29,7 @@ class ProfilBearbeitenController extends Controller
 //    Auth::user()->name->get()->first()->save();
 
     //$curr_user = DB::table('users')->where('name', Auth::user()->name)->get()->first();
-    $curr_user = \App\User::whereName(Auth::user()->name)->first();
+    $curr_user = \App\User::whereEmail(Auth::user()->email)->first();
 
 
 
