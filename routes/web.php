@@ -36,10 +36,9 @@ Route::get('/profilBearbeiten.html', 'UserController@setAll');
 
 Route::post('/profilSpeichern', 'ProfilBearbeitenController@saveProfile');
 
+Route::get('/genre.html', 'FillGenre@returnFilledGenre');
 
-Route::get('/genre.html', function () {
-    return view('genre');
-});
+
 Route::get('/login.html', function () {
     return view('auth/login');
 });

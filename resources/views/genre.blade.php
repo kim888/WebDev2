@@ -82,25 +82,110 @@
 
 
             </div>
+        </div>
     </nav>
+
+
+
+
+
     <p class="lead text-center text-white ueber">GENRE</p>
+
+
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
             <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ROCK</p>
         </div>
     </div>
-    <div class="simple-slider" style ="height: 500px">
+    <div class="simple-slider" style = "height: 500px">
         <div class="swiper-container">
-            <div class="swiper-wrapper" style ="height: 500px">
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+             <div class="swiper-wrapper" style = "height: 500px;">
+
+                 <div class="swiper-slide">
+                     <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$rock[0]. '.jpg')}});">
+                         <div class="box" style="background: rgba(0,0,0,0)">
+                             <div class="view overlay">
+
+                                 <div class="mask flex-center rgba-red-strong">
+                                     <p class="description text-white"><?= $rock[0]?></p>
+                                     <a href="artist/{{$rock[0]}}" class="learn-more">Learn more »</a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+                 <div class="swiper-slide">
+                     <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$rock[1]. '.jpg')}});">
+                         <div class="box" style="background: rgba(0,0,0,0)">
+                             <div class="view overlay">
+
+                                 <div class="mask flex-center rgba-red-strong">
+                                     <p class="description text-white"><?= $rock[1]?></p>
+                                     <a href="artist/{{$rock[1]}}" class="learn-more">Learn more »</a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+                 <div class="swiper-slide">
+                     <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$rock[2]. '.jpg')}});">
+                         <div class="box" style="background: rgba(0,0,0,0)">
+                             <div class="view overlay">
+
+                                 <div class="mask flex-center rgba-red-strong">
+                                     <p class="description text-white"><?= $rock[2]?></p>
+                                     <a href="artist/{{$rock[2]}}" class="learn-more">Learn more »</a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="background-color:#ffffff;">
+            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">IRISH</p>
+        </div>
+    </div>
+    <div class="simple-slider" style = "height: 500px">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" style = "height: 500px">
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$irish[0]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $irish[0]?></p>
+                                    <a href="artist/{{$irish[0]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
     </div>
+
+
+
+
+
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
             <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HIP HOP</p>
@@ -109,15 +194,72 @@
     <div class="simple-slider" style = "height: 500px">
         <div class="swiper-container">
             <div class="swiper-wrapper" style = "height: 500px">
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$hiphop[0]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $hiphop[0]?></p>
+                                    <a href="artist/{{$hiphop[0]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$hiphop[1]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $hiphop[1]?></p>
+                                    <a href="artist/{{$hiphop[1]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col" style="background-color:#ffffff;">
+            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">VOLKSMUSIK</p>
+        </div>
+    </div>
+    <div class="simple-slider" style = "height: 500px">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" style = "height: 500px">
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$volksmusik[0]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $volksmusik[0]?></p>
+                                    <a href="artist/{{$volksmusik[0]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
             <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">POP</p>
@@ -126,32 +268,90 @@
     <div class="simple-slider" style = "height: 500px">
         <div class="swiper-container">
             <div class="swiper-wrapper" style = "height: 500px">
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$pop[0]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $pop[0]?></p>
+                                    <a href="artist/{{$pop[0]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
     </div>
+
     <div class="row">
         <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ELECTRO/HOUSE</p>
+            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">TECHNO</p>
         </div>
     </div>
     <div class="simple-slider" style = "height: 500px">
         <div class="swiper-container">
             <div class="swiper-wrapper" style = "height: 500px">
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
-                <div class="swiper-slide" style="background-image:url({{asset('https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500')}});"></div>
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$techno[0]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $techno[0]?></p>
+                                    <a href="artist/{{$techno[0]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col" style="background-color:#ffffff;">
+            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">REGGAE</p>
+        </div>
+    </div>
+    <div class="simple-slider" style = "height: 500px">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" style = "height: 500px">
+
+                <div class="swiper-slide">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$reggae[0]. '.jpg')}});">
+                        <div class="box" style="background: rgba(0,0,0,0)">
+                            <div class="view overlay">
+
+                                <div class="mask flex-center rgba-red-strong">
+                                    <p class="description text-white"><?= $reggae[0]?></p>
+                                    <a href="artist/{{$reggae[0]}}" class="learn-more">Learn more »</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
     </div>
+
+
+
+
+
     <div class="footer-basic">
         <footer>
             <div class="social"><a href="http://www.snapchat.com"><i class="icon ion-social-instagram"></i></a><a href="http://www.instagram.de"><i class="icon ion-social-snapchat"></i></a><a href="http://www.twitter.de"><i class="icon ion-social-twitter"></i></a><a href="http://www.facebook.de"><i class="icon ion-social-facebook"></i></a></div>
