@@ -19,53 +19,62 @@ class artist extends Seeder
         $artist1->picture = 'Flogging_Molly';
         $artist1->save();
 
-        /*'
-        DB::table('artists')->insert([
-            'bandname' => 'Paul Kalkbrenner',
-            'genre' => 'Techno',
-            'picture' => 'Paul_Kalkbrenner'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Eminem',
-            'genre' => 'Hip Hop',
-            'picture' => 'Eminem'
 
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Nas',
-            'genre' => 'Hip Hop',
-            'picture' => 'Nas'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Rihanna',
-            'genre' => 'Pop',
-            'picture' => 'Rihanna'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Florian Silbereisen',
-            'genre' => 'Volksmusik',
-            'picture' => 'Silbereisen'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'The Offspring',
-            'genre' => 'Rock',
-            'picture' => 'The_Offspring'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Rise Against',
-            'genre' => 'Rock',
-            'picture' => 'Rise_Against'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Beatsteaks',
-            'genre' => 'Rock',
-            'picture' => 'Beatsteaks'
-        ]);
-        DB::table('artists')->insert([
-            'bandname' => 'Bob Marley',
-            'genre' => 'Reggae',
-            'picture' => 'Bob_Marley'
-        ]);*/
+        $artist2 = new App\Artist();
+        $artist2->bandname = 'Paul Kalkbrenner';
+        $artist2->genre = 'Techno';
+        $artist2->picture = 'Paul_Kalkbrenner';
+        $artist2->save();
+
+        $artist3 = new App\Artist();
+        $artist3->bandname = 'Eminem';
+        $artist3->genre = 'Hip Hop';
+        $artist3->picture = 'Eminem';
+        $artist3->save();
+
+        $artist4 = new App\Artist();
+        $artist4->bandname = 'Nas';
+        $artist4->genre = 'Hip Hop';
+        $artist4->picture = 'Nas';
+        $artist4->save();
+
+        $artist5 = new App\Artist();
+        $artist5->bandname = 'Rihanna';
+        $artist5->genre = 'Pop';
+        $artist5->picture = 'Rihanna';
+        $artist5->save();
+
+        $artist6 = new App\Artist();
+        $artist6->bandname = 'Florian Silbereisen';
+        $artist6->genre = 'Volksmusik';
+        $artist6->picture = 'Florian_Silbereisen';
+        $artist6->save();
+
+        $artist7 = new App\Artist();
+        $artist7->bandname = 'The Offspring';
+        $artist7->genre = 'Rock';
+        $artist7->picture = 'The_Offspring';
+        $artist7->save();
+
+        $artist8 = new App\Artist();
+        $artist8->bandname = 'Rise Against';
+        $artist8->genre = 'Rock';
+        $artist8->picture = 'Rise_Against';
+        $artist8->save();
+
+        $artist9 = new App\Artist();
+        $artist9->bandname = 'Beatsteaks';
+        $artist9->genre = 'Rock';
+        $artist9->picture = 'Beatsteaks';
+        $artist9->save();
+
+        $artist10 = new App\Artist();
+        $artist10->bandname = 'Bob Marley';
+        $artist10->genre = 'Reggae';
+        $artist10->picture = 'Bob_Marley';
+        $artist10->save();
+
+
 
 
     }

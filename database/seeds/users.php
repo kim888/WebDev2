@@ -14,6 +14,20 @@ class users extends Seeder
      */
     public function run(Faker $faker)
     {
+        For($i=1;$i<=12;$i++) {
+            ${'user' . $i} = new App\User();
+            ${'user' . $i}->vorname = $faker->firstName;
+            ${'user' . $i}->nachname = $faker->lastName;
+            ${'user' . $i}->ort = $faker->city;
+            ${'user' . $i}->strasse = $faker->streetName;
+            ${'user' . $i}->hausnummer = $faker->numberBetween($min = 1, $max = 239);
+            ${'user' . $i}->land = $faker->country;
+            ${'user' . $i}->postleitzahl = $faker->postcode;
+            ${'user' . $i}->email = $faker->email;
+            ${'user' . $i}->password = $faker->password;
+            ${'user' . $i}->save();
+        }
+/*
         $user1 = new App\User();
         $user1 -> vorname = $faker->firstNameMale;
         $user1 -> nachname = 'testboy';
@@ -41,7 +55,7 @@ class users extends Seeder
         $user2 -> email = 'zwegat@web.de';
         $user2 -> password = Hash::make('hallo');
         $user2 -> save();
-
+*/
         /*
         DB::table('users')->insert([
             'name' => 'testeroni',
