@@ -111,17 +111,14 @@
 <div class="features-boxed">
 <div class="container">
     <div class="row justify-content-center features">
-
         <?php for($i = 0; $i < count($bands); $i++) : ?>
-        <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:98% auto; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' . $imgNames[$i] . '.jpg')}})">
-            <div class="box" style="background: rgba(0,0,0,0); width: 100px; height: 300px;">
+        <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size: cover; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' . $imgNames[$i] . '.jpg')}})">
+            <div class="box" style="background: rgba(0,0,0,0)">
                 <div class="view overlay">
-                    <i class="fa fa-map-marker icon"></i>
+                    <i class="fa icon" style="width: 300px; height: 200px;"></i>
                     <div class="mask flex-center rgba-red-strong">
-                        <p name="bandname" class="description text-white"><?= $bands[$i]?></p>
-                        <a  href="artist/{{$bands[$i]}}" class="learn-more">mehr... »</a>
-
-                    </div>
+                        <p class="description text-white" style="font-size: 2em;"><?= $bands[$i]?></p>
+                        <a href="artist/{{$bands[$i]}}" class="learn-more">Mehr Erfahren</a></div>
                 </div>
             </div>
         </div>

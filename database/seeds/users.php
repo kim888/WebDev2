@@ -14,7 +14,7 @@ class users extends Seeder
      */
     public function run(Faker $faker)
     {
-        For($i=1;$i<=12;$i++) {
+        For ($i = 1; $i <= 12; $i++) {
             ${'user' . $i} = new App\User();
             ${'user' . $i}->vorname = $faker->firstName;
             ${'user' . $i}->nachname = $faker->lastName;
@@ -27,6 +27,8 @@ class users extends Seeder
             ${'user' . $i}->password = $faker->password;
             ${'user' . $i}->save();
         }
+    }
+}
 /*
         $user1 = new App\User();
         $user1 -> vorname = $faker->firstNameMale;
@@ -196,6 +198,7 @@ class users extends Seeder
             'postleitzahl' => '91627',
             'email' => 'Hahnenkopf@gmx.de',
             'password' => 'HahnimKorb123',
-        ]);*/
+        ]);
     }
 }
+        */
