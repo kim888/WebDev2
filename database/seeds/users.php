@@ -24,7 +24,7 @@ class users extends Seeder
             ${'user' . $i}->land = $faker->country;
             ${'user' . $i}->postleitzahl = '12345';//$faker->postcode;
             ${'user' . $i}->email = $faker->email;
-            ${'user' . $i}->password = $faker->password;
+            ${'user' . $i}->password = Hash::make($faker->password);
             ${'user' . $i}->save();
         }
     }
