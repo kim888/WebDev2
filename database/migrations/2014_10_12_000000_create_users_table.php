@@ -18,14 +18,14 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('password');
 
-            $table->string('vorname');
+            $table->string('vorname')->nullable();
             $table->string('nachname');
             //$table->date('geburtsdatum');
-            $table->string('ort');
-            $table->string('strasse');
-            $table->integer('hausnummer');
-            $table->string('land');
-            $table->integer('postleitzahl');
+            $table->string('ort')->nullable();
+            $table->string('strasse')->nullable();
+            $table->integer('hausnummer')->nullable();
+            $table->string('land')->nullable();
+            $table->integer('postleitzahl')->nullable();
             //$table->string('picture');
 
             $table->rememberToken();

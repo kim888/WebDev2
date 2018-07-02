@@ -63,10 +63,10 @@
             @csrf
             <h2 class="text-center ueber" style="font-size:3em;"><strong>Create</strong> an account.</h2>
             <div class="form-group ">
-                <input id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" type="text" name="name" placeholder="Username" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('name') }}" required autofocus>
-                @if ($errors->has('name'))
+                <input id="nachname" class="form-control{{ $errors->has('nachname') ? ' is-invalid' : '' }}" type="text" name="nachname" placeholder="Username" data-bs-hover-animate="pulse" style="border:1px solid #348899;border-radius:40px;" value="{{ old('nachname') }}" required autofocus>
+                @if ($errors->has('nachname'))
                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>{{ $errors->first('nachname') }}</strong>
                                     </span>
                 @endif
             </div>
