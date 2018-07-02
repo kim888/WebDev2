@@ -22,7 +22,7 @@ class users extends Seeder
             ${'user' . $i}->strasse = $faker->streetName;
             ${'user' . $i}->hausnummer = $faker->numberBetween($min = 1, $max = 239);
             ${'user' . $i}->land = $faker->country;
-            ${'user' . $i}->postleitzahl = $faker->postcode;
+            ${'user' . $i}->postleitzahl = '12345';//$faker->postcode;
             ${'user' . $i}->email = $faker->email;
             ${'user' . $i}->password = $faker->password;
             ${'user' . $i}->save();

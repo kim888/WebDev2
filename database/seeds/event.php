@@ -106,7 +106,7 @@ class event extends Seeder
         $event7->eventname = 'Reggeatime';
         $event7->beschreibung = 'Bob Marley live in Regensburg';
         $event7->mindestalter = '18';
-        $event7->datum = '2018-11-32';
+        $event7->datum = '2018-11-30';
         $event7->beginn = '21:15:00';
         $event7->ort = 'Regensburg';
         $event7->strasse = 'Domstraße';
