@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warenkorb</title>
+    <title>Danke!</title>
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);padding-left:16px;">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
         <div class="container"><a class="navbar-brand" href="test.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
@@ -46,51 +46,7 @@
                     class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
     </nav>
-    <p class="lead text-center text-white" style="font-size:2em;">WARENKORB</p>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3"><img src="assets/img/justin_timberlake_2.jpg" style="width:150px;padding:16px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;"></div>
-                <div class="col-md-3">
-                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="border-radius:20px;background-color:#348899;margin-left:40px;margin-top:50px;">Bearbeiten</button>
-                        <div class="dropdown-menu"
-                            role="menu" style="border-radius:40px;background-color:#979c9c;"><a class="dropdown-item" role="presentation" href="#" style="background-color:#979c9c;border-radius:20px;color:red;">Löschen</a></div>
-                    </div>
-                </div>
-                <div class="col" style="min-width:100px;max-width:120px;">
-                    <p style="font-size:16px;color:rgb(255,255,255);margin-top:50px;">Platz: 14 B</p>
-                </div>
-                <div class="col-md-3" style="min-width:120px;max-width:120px;">
-                    <p style="font-size:16px;color:rgb(255,255,255);margin-top:50px;">Menge: 1</p>
-                </div>
-                <div class="col-md-3">
-                    <p style="color:rgb(255,255,255);font-size:16px;margin-top:50px;">Preis: 69,99€</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <p style="color:rgb(255,255,255);font-size:16px;width:180px;">Gesamt: 69,99€</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"><a class="btn btn-primary" role="button" href="rechnungsauswahl.html" style="margin-top:50px;margin-left:40px;border-radius:20px;background-color:#348899;">Zur Kasse</a></div>
-            </div>
-        </div>
-    </div>
+    <p class="lead text-center text-white" style="font-size:2em;">VIELEN DANK FÜR DEINEN EINKAUF!</p>
     <div class="footer-basic">
         <footer>
             <div class="social"><a href="http://www.instagram.com"><i class="icon ion-social-instagram"></i></a><a href="http://www.snapchat.de"><i class="icon ion-social-snapchat"></i></a><a href="http://www.twitter.de"><i class="icon ion-social-twitter"></i></a><a href="http://www.facebook.de"><i class="icon ion-social-facebook"></i></a></div>

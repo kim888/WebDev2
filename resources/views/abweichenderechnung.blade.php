@@ -4,33 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil bearbeiten</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="assets/css/Media-Slider-Bootstrap-3.css">
-    <link rel="stylesheet" href="assets/css/Media-Slider-Bootstrap-3.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
-    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
-    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="shortcut icon" type="image/x-icon" href="/FavIcon.png">
+    <title>Abweichende Rechnungsadresse</title>
+    <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Carousel-Hero.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
+    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css")}}">
+    <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Profile-Edit-Form.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Profile-Edit-Form.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/Simple-Slider.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
 
+    <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
-        <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url(&quot;assets/img/Logo.png&quot;);max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
-                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="test.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
@@ -38,28 +40,18 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
                 </ul>
                 <form class="form-inline mr-auto" target="_self">
-                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div><a class="btn btn-primary" role="button" href="warenkorb.html"
-                        style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                    <a
-                        class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a>
-                        <div class="btn-group"><button class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
-                                type="button" style="background-color:#348899;border-radius:40px;"></button>
-                            <div class="dropdown-menu" role="menu" style="background-color:#979c9c;border-radius:40px;"><a class="dropdown-item" role="presentation" href="user.html" data-bs-hover-animate="pulse" style="color:#348899;border-radius:60px;">Profil bearbeiten</a><a class="dropdown-item" role="presentation" href="index.html" data-bs-hover-animate="pulse"
-                                    style="color:#7a243a;border-radius:60px;">Logout</a></div>
-                        </div>
-                </form>
-            </div>
+                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
+                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+                <a
+                    class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
         </div>
     </nav>
+    <p class="lead text-center text-white" style="font-size:2em;">ABWEICHENDE RECHNUNGSADRESSE</p>
     <div class="container profile profile-view" id="profile">
         <form>
             <div class="form-row profile-row">
-                <div class="col-md-4 relative">
-                    <div class="avatar">
-                        <div class="avatar-bg center" style="background-image:url(&quot;assets/img/Bildschirmfoto%202018-05-14%20um%2012.19.05.png&quot;);"></div>
-                    </div><input type="file" class="form-control" name="avatar-file" style="border:1px solid #348899;border-radius:40px;"></div>
                 <div class="col-md-8">
-                    <h1 style="color:rgb(255,255,255);">Profil bearbeiten</h1>
+                    <h1 style="color:rgb(255,255,255);">Rechnung an:</h1>
                     <hr>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
@@ -110,7 +102,8 @@
                 </div>
                 <hr>
                 <div class="form-row">
-                    <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit" style="background-color:#348899;border:1px solid #348899;border-radius:40px;">SAVE </button><button class="btn btn-danger form-btn" type="reset" style="background-color:#979c9c;border:1px solid #7a243a;border-radius:40px;">CANCEL </button></div>
+                    <div class="col-md-12 content-right"><a class="btn btn-primary form-btn" role="button" href="bezahlmethode.html" type="submit" style="background-color:#348899;border:1px solid #348899;border-radius:40px;">Weiter</a><a class="btn btn-danger form-btn" role="button" href="rechnungsauswahl.html"
+                            type="reset" style="background-color:#979c9c;border:1px solid #7a243a;border-radius:40px;">Back</a></div>
                 </div>
             </div>
     </div>
