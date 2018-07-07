@@ -48,7 +48,6 @@
     }
 
 </style>
-</style>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
@@ -122,24 +121,23 @@
             <li data-target="#carousel-1" data-slide-to="2"></li>
             </ol>
     </div>
-
     <!--Dropdown auswahl der Veranstaltung-->
     <?php for($i = 0; $i < count($events); $i++) : ?>
     <div role="tablist" id="accordion" style="margin-top:20px;">
             <div class="card">
-            <div class="card-header" id="heading{{$events[$i]}}">
+            <div class="card-header" id="heading{{$events[$i][0]}}">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$events[$i]}}" aria-expanded="true" aria-controls="collapse{{$events[$i]}}" style="width: 100%; text-decoration: none; color: black;">
-                        Berlin Sa. 21.07.18 {{$events[$i]}}
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$events[$i][0]}}" aria-expanded="true" aria-controls="collapse{{$events[$i][0]}}" style="width: 100%; text-decoration: none; color: black;">
+                        {{$events[$i][0]}},  {{$events[$i][6]}}
                     </button>
                 </h5>
             </div>
 
-            <div id="collapse{{$events[$i]}}" class="collapse hide" aria-labelledby="heading{{$events[$i]}}" data-parent="#accordionExample">
+            <div id="collapse{{$events[$i][0]}}" class="collapse hide" aria-labelledby="heading{{$events[$i][0]}}" data-parent="#accordionExample">
                 <div class="card-body">
-                    <p class="card-body-p" style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:139px;height:0px;">Uhrzeit: {{$events[1]}}</p>
-                    <p class="card-body-p" style="font-size:16px;width:211px;height:0px;margin:0px;margin-top:35px;">Location: Pierre Boulez Saal</p>
-                    <p class="card-body-p" style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Album: Man of the Woods</p>
+                    <p class="card-body-p" style="font-size:16px;margin:0px;margin-top:0px;margin-right:0px;margin-left:0px;width:150px;height:0px;">Uhrzeit: {{$events[$i][7]}}</p>
+                    <p class="card-body-p" style="font-size:16px;width:308px;height:0px;margin:0px;margin-top:35px;">Location: {{$events[$i][4]}} {{$events[$i][0]}}, {{$events[$i][1]}} {{$events[$i][2]}}</p>
+                    <p class="card-body-p" style="width:196px;font-size:16px;height:0px;margin:0px;margin-top:35px;">Verfügbare Plätze: {{$events[$i][8]}}</p>
                     <button class="btn btn-primary" type="button" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;">
                         Favorisieren
                     </button>

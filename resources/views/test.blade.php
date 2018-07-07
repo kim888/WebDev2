@@ -91,7 +91,15 @@
 
 
 <!--Live Ticker-->
-<marquee style = "color: white">+++Liveticker!!! <span style="color: #348899">Achtung</span> Eminem Tickets<span style="color: #348899"> fast ausverkauft!!!</span> Liveticker!!!+++ </marquee>
+
+<marquee style = "color: white">
+    <?php for($j = 0; $j < count($ticker); $j++) : ?>
+    +++Liveticker+++
+    <span style="color: #348899">Achtung </span>
+    {{$ticker[$j]}} Tickets
+    <span style="color: #348899"> fast ausverkauft!!! </span>
+        <?php endfor ?>
+</marquee>
 
 
 
