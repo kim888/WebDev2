@@ -6,22 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Admin</title>
 
-    <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/fonts/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/fonts/ionicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Features-Boxed.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="{{asset("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")}}">
-    <link rel="stylesheet" href="{{asset('/css/Login-Form-Dark.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Media-Slider-Bootstrap-3.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Navigation-with-Search.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Pretty-Registration-Form.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Profile-Edit-Form.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Profile-Edit-Form.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
-
     <link rel="stylesheet" href="{{asset("assets/bootstrap/css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("assets/fonts/font-awesome.min.css")}}">
     <link rel="stylesheet" href="{{asset("assets/fonts/ionicons.min.css")}}">
