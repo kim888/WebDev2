@@ -142,7 +142,7 @@
                         Favorisieren
                     </button>
                     <button class="btn btn-primary" role="button" href="platzwahl.html" data-bs-hover-animate="pulse" style="width:120px;margin-top:35px;border:1px solid #348899;border-radius:20px;background-color:#348899;margin-left:35px;">
-                        Platz buchen
+                        <a href="/platzwahl.html">Platz buchen
                     </button>
                 </div>
             </div>
