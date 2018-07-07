@@ -23,16 +23,27 @@
     <link rel="stylesheet" href="{{asset('/css/Registration-Form-with-Photo.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Simple-Slider.css')}}">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('bootstrap/css/mdb.css')}}">
 
     <link rel="stylesheet" href="{{asset('/fonts/fontNFL.css')}}">
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
 
+    <link rel="stylesheet" href="{{asset('/css/Footer-Basic.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('FavIcon.png')}}">
+
+
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+
 
     <style type="text/css">
 
 
-        p{
+        p,  .card-header{
             font-family: 'Bougan SSi';
             font-size: 3em;
         }
@@ -41,6 +52,12 @@
             font-family: 'NFLCHARG';
             font-weight:600;
             font-size:3em;
+        }
+
+        img{
+            object-fit: cover;
+            height: 700px;
+            width: auto;
         }
     </style>
 
@@ -92,264 +109,201 @@
     <p class="lead text-center text-white ueber">GENRE</p>
 
 
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">ROCK</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-             <div class="swiper-wrapper" style = "height: 500px;">
-
-                 <div class="swiper-slide">
-                     <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$rock[0]. '.jpg')}});">
-                         <div class="box" style="background: rgba(0,0,0,0)">
-                             <div class="view overlay">
-
-                                 <div class="mask flex-center rgba-red-strong">
-                                     <p class="description text-white"><?= $rock[0]?></p>
-                                     <a href="artist/{{$rock[0]}}" class="learn-more">Learn more »</a></div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-
-
-                 <div class="swiper-slide">
-                     <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$rock[1]. '.jpg')}});">
-                         <div class="box" style="background: rgba(0,0,0,0)">
-                             <div class="view overlay">
-
-                                 <div class="mask flex-center rgba-red-strong">
-                                     <p class="description text-white"><?= $rock[1]?></p>
-                                     <a href="artist/{{$rock[1]}}" class="learn-more">Learn more »</a></div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-
-
-                 <div class="swiper-slide">
-                     <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$rock[2]. '.jpg')}});">
-                         <div class="box" style="background: rgba(0,0,0,0)">
-                             <div class="view overlay">
-
-                                 <div class="mask flex-center rgba-red-strong">
-                                     <p class="description text-white"><?= $rock[2]?></p>
-                                     <a href="artist/{{$rock[2]}}" class="learn-more">Learn more »</a></div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-        </div>
-    </div>
-
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">IRISH</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" style = "height: 500px">
-
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$irish[0]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
-
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $irish[0]?></p>
-                                    <a href="artist/{{$irish[0]}}" class="learn-more">Learn more »</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">HIP HOP</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" style = "height: 500px">
-
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$hiphop[0]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
-
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $hiphop[0]?></p>
-                                    <a href="artist/{{$hiphop[0]}}" class="learn-more">Learn more »</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$hiphop[1]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
-
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $hiphop[1]?></p>
-                                    <a href="artist/{{$hiphop[1]}}" class="learn-more">Learn more »</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">VOLKSMUSIK</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" style = "height: 500px">
-
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$volksmusik[0]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
-
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $volksmusik[0]?></p>
-                                    <a href="artist/{{$volksmusik[0]}}" class="learn-more">Learn more »</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">POP</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" style = "height: 500px">
-
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$pop[0]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
-
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $pop[0]?></p>
-                                    <a href="artist/{{$pop[0]}}" class="learn-more">Learn more »</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!--Dropdown auswahl der Genre-->
+    <?php for($i = 0; $i < count($genre); $i++) : ?>
+    <div role="tablist" id="accordion" style="margin-top:20px;">
+        <div class="card">
+            <div class="card-header" id="heading{{$genre[$i]}}">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$genre[$i]}}" aria-expanded="true" aria-controls="collapse{{$genre[$i]}}" style="width: 100%; text-decoration: none; color: black;">
+                        {{$genre[$i]}}
+                    </button>
+                </h5>
             </div>
 
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">TECHNO</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" style = "height: 500px">
+            <div id="collapse{{$genre[$i]}}" class="collapse hide" aria-labelledby="heading{{$genre[$i]}}" data-parent="#accordionExample">
+                <div class="card-body">
 
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$techno[0]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
 
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $techno[0]?></p>
-                                    <a href="artist/{{$techno[0]}}" class="learn-more">Learn more »</a></div>
-                            </div>
+
+                            @switch($genre[$i])
+
+                                @case('ROCK')
+
+                                <div class="carousel-item active">
+
+                                    <a href="artist/{{$pictures[0][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[0][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[0][1]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[0][1].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[0][2]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[0][2].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+                                @case('POP')
+
+                                <div class="carousel-item active">
+                                    <a href="artist/{{$pictures[1][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[1][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[1][0]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[1][0].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[1][0]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[1][0].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+                                @case('IRISH')
+
+                                <div class="carousel-item active">
+                                    <a href="artist/{{$pictures[2][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[2][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[2][0]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[2][0].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[2][0]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[2][0].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+                                @case('VOLKSMUSIK')
+
+                                <div class="carousel-item active">
+                                    <a href="artist/{{$pictures[3][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[3][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[3][0]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[3][0].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[3][0]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[3][0].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+                                @case('REGGAE')
+
+                                <div class="carousel-item active">
+                                    <a href="artist/{{$pictures[4][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[4][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[4][0]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[4][0].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[4][0]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[4][0].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+                                @case('HIPHOP')
+
+                                <div class="carousel-item active">
+                                    <a href="artist/{{$pictures[5][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[5][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[5][1]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[5][1].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[5][0]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[5][0].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+
+                                @case('TECHNO')
+
+                                <div class="carousel-item active">
+                                    <a href="artist/{{$pictures[6][0]}}">
+                                    <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[6][0].".jpg")}}" alt="First slide">
+                                    </a>
+                                </div>
+                                    <div class="carousel-item">
+                                        <a href="artist/{{$pictures[6][0]}}">
+                                        <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[6][0].".jpg")}}" alt="Second slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <<a href="artist/{{$pictures[6][0]}}">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[6][0].".jpg")}} alt="Third slide">
+                                        </a>
+                                    </div>
+
+
+                                @break;
+
+
+
+                            @endswitch
+
+
+
+
                         </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
+
+
                 </div>
             </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
-
-
-    <div class="row">
-        <div class="col" style="background-color:#ffffff;">
-            <p class="float-left " style="color: black; font-size:16px;width:200px;margin:0px;padding-left:20px;">REGGAE</p>
-        </div>
-    </div>
-    <div class="simple-slider" style = "height: 500px">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" style = "height: 500px">
-
-                <div class="swiper-slide">
-                    <div class="col-sm-6 col-md-5 col-lg-4 item" style="background-size:auto 98%; background-repeat: no-repeat ;background-image: url({{asset('img/dbImages/artists/' .$reggae[0]. '.jpg')}});">
-                        <div class="box" style="background: rgba(0,0,0,0)">
-                            <div class="view overlay">
-
-                                <div class="mask flex-center rgba-red-strong">
-                                    <p class="description text-white"><?= $reggae[0]?></p>
-                                    <a href="artist/{{$reggae[0]}}" class="learn-more">Learn more »</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-
-
+    <?php endfor ?>
 
 
     <div class="footer-basic">
@@ -366,13 +320,13 @@
                 <p class="copyright">NEITQEY © 2018</p>
         </footer>
     </div>
-    <script src="{{asset("assets/js/jquery.min.js")}}"></script>
-    <script src="{{asset("assets/bootstrap/js/bootstrap.min.js")}}"></script>
-    <script src="{{asset("assets/js/bs-animation.js")}}"></script>
+    <script src="{{asset("/js/jquery.min.js")}}"></script>
+    <script src="{{asset("/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{asset("/js/bs-animation.js")}}"></script>
     <script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js")}}"></script>
-    <script src="{{asset("assets/js/Media-Slider-Bootstrap-3.js")}}"></script>
-    <script src="{{asset("assets/js/Profile-Edit-Form.js")}}"></script>
-    <script src="{{asset("assets/js/Simple-Slider.js")}}"></script>
+    <script src="{{asset("/js/Media-Slider-Bootstrap-3.js")}}"></script>
+    <script src="{{asset("/js/Profile-Edit-Form.js")}}"></script>
+    <script src="{{asset("/js/Simple-Slider.js")}}"></script>
 </body>
 
 </html>
