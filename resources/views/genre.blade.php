@@ -135,12 +135,12 @@
 
                                 <div class="carousel-item active">
 
-                                    <a href="artist/{{$pictures[0][0]}}">
+                                    <a href="artist/The Offspring">
                                     <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[0][0].".jpg")}}" alt="First slide">
                                     </a>
                                 </div>
                                     <div class="carousel-item">
-                                        <a href="artist/{{$pictures[0][1]}}">
+                                        <a href="artist/Rise Against">
                                         <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[0][1].".jpg")}}" alt="Second slide">
                                         </a>
                                     </div>
@@ -177,7 +177,7 @@
                                 @case('IRISH')
 
                                 <div class="carousel-item active">
-                                    <a href="artist/{{$pictures[2][0]}}">
+                                    <a href="artist/Flogging Molly">
                                     <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[2][0].".jpg")}}" alt="First slide">
                                     </a>
                                 </div>
@@ -188,7 +188,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <a href="artist/{{$pictures[2][0]}}">
-                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[2][0].".jpg")}} alt="Third slide">
+                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/Beatsteaks.jpg")}} alt="Third slide">
                                         </a>
                                     </div>
 
@@ -198,17 +198,17 @@
                                 @case('VOLKSMUSIK')
 
                                 <div class="carousel-item active">
-                                    <a href="artist/{{$pictures[3][0]}}">
+                                    <a href="artist/Florian Silbereisen">
                                     <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[3][0].".jpg")}}" alt="First slide">
                                     </a>
                                 </div>
                                     <div class="carousel-item">
-                                        <a href="artist/{{$pictures[3][0]}}">
+                                        <a href="artist/Florian Silbereisen">
                                         <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[3][0].".jpg")}}" alt="Second slide">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a href="artist/{{$pictures[3][0]}}">
+                                        <a href="artist/Florian Silbereisen">
                                         <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[3][0].".jpg")}} alt="Third slide">
                                         </a>
                                     </div>
@@ -219,17 +219,17 @@
                                 @case('REGGAE')
 
                                 <div class="carousel-item active">
-                                    <a href="artist/{{$pictures[4][0]}}">
+                                    <a href="artist/Bob Marley">
                                     <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[4][0].".jpg")}}" alt="First slide">
                                     </a>
                                 </div>
                                     <div class="carousel-item">
-                                        <a href="artist/{{$pictures[4][0]}}">
+                                        <a href="artist/Bob Marley">
                                         <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[4][0].".jpg")}}" alt="Second slide">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a href="artist/{{$pictures[4][0]}}">
+                                        <a href="artist/Bob Marley">
                                         <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[4][0].".jpg")}} alt="Third slide">
                                         </a>
                                     </div>
@@ -262,17 +262,17 @@
                                 @case('TECHNO')
 
                                 <div class="carousel-item active">
-                                    <a href="artist/{{$pictures[6][0]}}">
+                                    <a href="artist/Paul Kalkbrenner">
                                     <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[6][0].".jpg")}}" alt="First slide">
                                     </a>
                                 </div>
                                     <div class="carousel-item">
-                                        <a href="artist/{{$pictures[6][0]}}">
+                                        <a href="artist/Paul Kalkbrenner">
                                         <img class="d-block w-100" src="{{asset("img/dbImages/artists/".$pictures[6][0].".jpg")}}" alt="Second slide">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <<a href="artist/{{$pictures[6][0]}}">
+                                        <a href="artist/Paul Kalkbrenner">
                                         <img class="d-block w-100"  src="{{asset("img/dbImages/artists/".$pictures[6][0].".jpg")}} alt="Third slide">
                                         </a>
                                     </div>
