@@ -29,9 +29,11 @@ class Ticket extends Model
         'id', 'datum', 'preis', 'userId', 'ticketId',
     ];
 
+    //one to many relation between tickets and user
     public function user(){
         return $this -> belongsTo(User::class);
     }
+    //one to many relation between tickets and event
     public function event(){
         return $this-> belongsTo(Event::class);
     }

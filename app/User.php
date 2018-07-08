@@ -69,6 +69,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    //one to many relation between user and tickets
     public function tickets(){
         return $this -> hasMany(Ticket::class);
     }

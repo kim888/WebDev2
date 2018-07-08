@@ -47,10 +47,11 @@ class Event extends Model
         'id', 'datum', 'beginn', 'locationId',
     ];
 
+    //many to many relationship between events and artists
     public function artists(){
         return $this->belongsToMany('App\Artist');
     }
-
+    //one to many relation between event and tickets
     public function tickets(){
         return $this->hasMany(Ticket::class);
     }

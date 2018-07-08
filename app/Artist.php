@@ -30,6 +30,7 @@ class Artist extends Model
 {
     protected $fillable = array('id', 'bandname', 'genre', 'locationId', 'tourdatum','picture');
 
+    //many to many relationship between artists and events
     public function events(){
         return $this->belongsToMany('App\Event');
     }

@@ -24,7 +24,7 @@ class FillArtistPage extends Controller
         //Variable img = Bild vom Artist aus Datenbank
         $img = $artist->picture;
 
-        //Vsriable für Array namens "info" - in diesem wird der Name und das Bild des Künstlers gespeichert
+        //Variable für Array namens "info" - in diesem wird der Name und das Bild des Künstlers gespeichert
         $info['bandinfos'] = [$name, $img];
         //eager
 
