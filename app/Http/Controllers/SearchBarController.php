@@ -33,7 +33,7 @@ class SearchBarController extends Controller
                 }
                 return Response($output);
             }
-            //Return Response($users);
+
         }
     }
 }

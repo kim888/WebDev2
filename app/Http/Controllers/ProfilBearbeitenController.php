@@ -15,49 +15,42 @@ class ProfilBearbeitenController extends Controller
      */
     public function saveProfile()
 {
-//    DB::table('users')->where('name', Auth::user()->name)->get()->first()->update([
-//        'vorname'-> $_POST['firstname'],
-//        'nachname'-> $_POST['lastname'],
-//        'telefonnummer'-> $_POST['strasse'],
-//        'ort' -> $_POST['stadt'],
-//        'strasse' -> $_POST['strasse'],
-//        'hausnummer' -> $_POST['nummer'],
-//        'land' -> $_POST['strasse'],
-//        'postleitzahl' -> $_POST['plz'],
-//        'email' -> $_POST['email']
-//    ]);
-//    Auth::user()->name->get()->first()->save();
-
-    //$curr_user = DB::table('users')->where('name', Auth::user()->name)->get()->first();
+    //Variable curr_user erstellen - hier wird der aktuelle User über die email ausgemacht und in curr_user eingespeichert
     $curr_user = \App\User::whereEmail(Auth::user()->email)->first();
 
 
-
+        //Vorname des aktuellen Users neu einspeichern
         if($_POST['firstname']!=null)
         {
             $curr_user->vorname =  $_POST['firstname'];
         }
 
-        if($_POST['lastname']!=null)
+
+        //Nachname des aktuellen Users neu einspeichern
+         if($_POST['lastname']!=null)
         {
             $curr_user->nachname =  $_POST['lastname'];
         }
 
+        //strasse des aktuellen Users neu einspeichern
         if($_POST['strasse']!=null)
         {
             $curr_user->strasse =  $_POST['strasse'];
         }
 
+        //Hausummer des aktuellen Users neu einspeichern
         if($_POST['nummer']!=null)
         {
             $curr_user->hausnummer = $_POST['nummer'];
         }
 
-        if($_POST['plz']!=null)
+        //Postleitzahl des aktuellen Users neu einspeichern
+         if($_POST['plz']!=null)
         {
             $curr_user->postleitzahl =  $_POST['plz'];
         }
 
+        //Stadtnamen des aktuellen Users neu einspeichern
         if($_POST['stadt']!=null)
         {
             $curr_user->ort =  $_POST['stadt'];
@@ -65,10 +58,11 @@ class ProfilBearbeitenController extends Controller
 
 
 
+        //curr_user mit neuen Attributen speichern
     $curr_user->save();
 
 
-
+        //Zurückkehren zum Profil
     return redirect('/userProfil.html');
 
 }
