@@ -79,6 +79,27 @@ Route::get('/adminRechnung.html', function (){
     return view('adminRechnung');
 });
 
+Route::get('/vollerWarenkorb.html', function (){
+    return view('vollerWarenkorb');
+});
+
+Route::get('/rechnungsauswahl.html', function (){
+    return view('rechnungsauswahl');
+});
+
+Route::get('/abweichenderechnung.html', function (){
+    return view('abweichenderechnung');
+});
+
+Route::get('/kaufabschluss.html', function (){
+    return view('kaufabschluss');
+});
+
+Route::get('/bezahlmethode.html', function (){
+    return view('bezahlmethode');
+});
+
+
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');

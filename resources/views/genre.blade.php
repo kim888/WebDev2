@@ -188,7 +188,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <a href="artist/{{$pictures[2][0]}}">
-                                        <img class="d-block w-100"  src="{{asset("img/dbImages/artists/Beatsteaks.jpg")}} alt="Third slide">
+                                        <img class="d-block w-100"  src="{{asset(img/dbImages/artists/Beatsteaks.jpg")}} alt="Third slide">
                                         </a>
                                     </div>
 

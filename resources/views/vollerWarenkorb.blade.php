@@ -28,29 +28,81 @@
     <link rel="stylesheet" href="{{asset('/css/dropdown.css')}}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("/img/FavIcon2.0.png")}}">
+
+
+    <style>
+        p, h3{
+            font-family: 'Bougan SSi';
+            font-size: 3em;
+        }
+
+
+        .ueber{
+            font-family: 'NFLCHARG';
+            font-weight:600;
+            font-size:3em;
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);padding-left:16px;">
-        <div class="container"><a class="navbar-brand" href="test.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
-                </ul>
-                <form class="form-inline mr-auto" target="_self">
-                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
-                </form><a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url(&quot;assets/img/Warenkorb.png&quot;);background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
-                <a
-                    class="btn btn-light action-button" role="button" href="signUp.html" style="background-color:#979c9c;">Sign Up</a><a class="btn btn-light action-button" role="button" href="logIn.html">Login</a></div>
+@csrf
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgba(52,54,66,0);">
+    <div class="container"><a class="navbar-brand" href="index.html" style="background-image:url({{asset('/img/Logo.png')}});max-width:none;width:160px;height:80px;background-repeat:no-repeat;background-size:contain;"></a><button class="navbar-toggler" data-toggle="collapse"
+                                                                                                                                                                                                                                      data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="genre.html">Genre</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="location.html">Location</a></li>
+            </ul>
+            <form class="form-inline mr-auto" target="_self">
+                <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" data-bs-hover-animate="pulse" id="search-field"></div>
+
+
+                @auth
+                    <a class="btn btn-primary" role="button" href="warenkorb.html" style="width:40px;height:40px;margin:0px;padding-top:6px;background-image:url({{asset('/img/Warenkorb.png')}});background-size:contain;background-repeat:no-repeat;background-color:rgba(255,255,255,0);color:rgb(255,255,255);"></a>
+
+
+                    <div class="dropdown1">
+                        <div class="dropbtn1">
+                            <a href="userProfil.html" style="text-decoration:none; color: white;">Profil</a>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content1">
+                            <a href="profilBearbeiten.html">Profil bearbeiten</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-light action-button" role="button" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest()
+                    <a class="btn btn-light action-button" role="button" href="signup.html" style="background-color:#979c9c;">Sign Up</a>
+                    <a class="btn btn-light action-button" role="button" href="login.html">Login</a>
+                @endguest
+
+
+
+
+                {{--
+                     <div class="btn-group"><button id="profil" class="btn btn-primary" type="button" style="background-color:#348899;border-radius:40px;">Profil</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
+                            type="button" style="background-color:#348899;border-radius:40px;"></button>
+                        <div class="dropdown-menu" role="menu" style="background-color:#979c9c;border-radius:40px;"><a class="dropdown-item" role="presentation" href="profilBearbeiten.html" data-bs-hover-animate="pulse" style="color:#348899;border-radius:60px;">Profil bearbeiten</a><a class="dropdown-item" role="presentation" href="index.html"
+                                data-bs-hover-animate="pulse" style="color:#7a243a;border-radius:60px;">Logout</a></div>
+                    </div>
+
+                --}}
+
+            </form>
         </div>
-    </nav>
-    <p class="lead text-center text-white" style="font-size:2em;">WARENKORB</p>
+    </div>
+</nav>    <p class="lead text-center text-white" style="font-family: 'NFLCHARG';font-weight:600;font-size:3em;" >WARENKORB</p>
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3"><img src="assets/img/justin_timberlake_2.jpg" style="width:150px;padding:16px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;"></div>
+                <div class="col-md-3"><img src="{{asset('/img/dbImages/artists/Eminem.jpg')}}" style="width:150px;padding:16px;padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;"></div>
+
+
                 <div class="col-md-3">
                     <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="border-radius:20px;background-color:#348899;margin-left:40px;margin-top:50px;">Bearbeiten</button>
                         <div class="dropdown-menu"
