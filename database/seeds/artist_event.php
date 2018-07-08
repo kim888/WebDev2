@@ -10,23 +10,13 @@ class artist_event extends Seeder
      * @return void
      */
     public function run()
-    {   /*
-        DB::table('artist_event')->insert([
-            'artist_id' => '1',
-            'event_id' => '1',
-        ]);
-        DB::table('artist_event')->insert([
-            'artist_id' => '1',
-            'event_id' => '2',
-        ]);*/
+    {
 
 
         //TODO reference
         $artist1= \App\Artist::whereId(1)->first();
         $event1 = \App\Event::whereId(1)->first();
         $artist1->events()->attach($event1);
-
-        //$event1->artists()->attach($artist1);
 
         $artist2= \App\Artist::whereId(2)->first();
         $event3 = \App\Event::whereId(3)->first();

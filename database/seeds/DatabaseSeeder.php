@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
+        //ruft alle notwendigen seeder in der richtigen reihenfolge auf
         $this->call(users::class);
         $this->call(artist::class);
         $this->call(event::class);
