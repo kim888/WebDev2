@@ -15,11 +15,20 @@ class FillArtistPage extends Controller
     public function getArtistInfo(String $name)
     {
         //lazy
+        //Erstellen von artist variable: artist = Objekt aus Datenbank wo der Bandname dem übergebenenen Namen entspricht
         $artist = \App\Artist::whereBandname($name)->first();
+
+        //Variable id = die Id vom artist aus Datenbank
         $id = $artist->id;
+
+        //Variable img = Bild vom Artist aus Datenbank
         $img = $artist->picture;
+
+        //Vsriable für Array namens "info" - in diesem wird der Name und das Bild des Künstlers gespeichert
         $info['bandinfos'] = [$name, $img];
         //eager
+
+
         $artist_with_events = \App\Artist::with('events')->where('id', $id)->get();
 
         //Event infos holen

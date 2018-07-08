@@ -15,8 +15,8 @@ class FillFeaturedPage extends Controller
 
 
         For($i=1;$i<=9;$i++) {
-            //Erstellen von Variablen: band1, band2, ..., bannd9.
-            // in diesen Variablen werden die Namen der Bands eingespeichert, wo die id de, Laufschleifenindex i entspricht
+            //Erstellen von Variablen: band1, band2, ..., band9.
+            // in diesen Variablen werden die Namen der Bands eingespeichert, wo die id dem Laufschleifenindex i entspricht
             ${'band' . $i}=DB::table('artists')->where('id', $i)->value('bandname');
 
             //Erstellen von Variablen: img1, img2, ..., img9.
@@ -24,10 +24,10 @@ class FillFeaturedPage extends Controller
             ${'img' . $i}=DB::table('artists')->where('id', $i)->value('picture');
         }
 
-        //einzelne Variblen (bands1, ..., bands9) werden in einem Array names "bands" gespeichert
+        //einzelne Variblen (bands1, ..., bands9) werden in einem Array namens "bands" gespeichert
         $data['bands'] = [$band1, $band2, $band3, $band4, $band5, $band6, $band7, $band8, $band9];
 
-        //einzelne Variblen (img1, ..., img9) werden in einem Array names "imgNames" gespeichert
+        //einzelne Variblen (img1, ..., img9) werden in einem Array namens "imgNames" gespeichert
         $imgNames['imgNames'] = [$img1, $img2, $img3, $img4, $img5, $img6, $img7, $img8, $img9];
 
 
